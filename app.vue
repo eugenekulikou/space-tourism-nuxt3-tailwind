@@ -1,10 +1,14 @@
 <template>
-  <p class="block max-w-25 h-25 bg-primary-dark text-primary-light">
-    some text
-  </p>
+  <NuxtPage />
 </template>
 
 <style>
 @import url("~/assets/styles/reset.css");
-@import url("~/assets/styles/variables.css");
+@import url("~/assets/styles/tailwind.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&family=Bellefair&display=swap");
+
+body {
+  @apply font-sans-normal font-normal text-light bg-dark;
+}
 </style>
