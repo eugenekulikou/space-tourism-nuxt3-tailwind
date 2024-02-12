@@ -3,7 +3,7 @@
     <h1 class="text-4xl uppercase">Design system</h1>
 
     <section id="colors" class="my-16 mx-0">
-      <h2 class="uppercase text-2xl font-sans-cond tracking-[0.295rem]">
+      <h2 class="uppercase text-2xl font-sans-cond tracking-widest">
         <span class="opacity-25 mr-2 font-semibold">01</span> colors
       </h2>
       <div class="flex space-x-2">
@@ -42,18 +42,18 @@
         class="flex flex-col space-y-4 xl:flex-row xl:space-x-4 xl:space-y-0"
       >
         <p
-          class="text-2xl uppercase text-white tracking-[0.295rem] font-sans-cond text-nowrap"
+          class="text-2xl uppercase text-white tracking-widest font-sans-cond text-nowrap"
         >
           <span class="opacity-25 font-semibold mr-6">01</span>pick your
           destination
         </p>
         <p
-          class="text-2xl uppercase text-white tracking-[0.295rem] font-sans-cond text-nowrap"
+          class="text-2xl uppercase text-white tracking-widest font-sans-cond text-nowrap"
         >
           <span class="opacity-25 font-semibold mr-6">02</span>meet your crew
         </p>
         <p
-          class="text-2xl uppercase text-white tracking-[0.295rem] font-sans-cond text-nowrap"
+          class="text-2xl uppercase text-white tracking-widest font-sans-cond text-nowrap"
         >
           <span class="opacity-25 font-semibold mr-6">03</span>space launch 101
         </p>
@@ -61,7 +61,7 @@
     </section>
 
     <section id="typography" class="my-16 mx-0">
-      <h2 class="uppercase text-2xl font-sans-cond tracking-[0.295rem] mb-12">
+      <h2 class="uppercase text-2xl font-sans-cond tracking-widest mb-12">
         <span class="opacity-25 font-semibold mr-2">02 </span>Typography
       </h2>
       <div class="flex">
@@ -96,7 +96,7 @@
             <p class="text-xl font-sans-normal">
               Heading 5 - Barlow Condensed Regular - 28px - 4.75 Character Space
             </p>
-            <p class="text-2xl tracking-[0.2969rem] font-sans-cond uppercase">
+            <p class="text-2xl tracking-widest font-sans-cond uppercase">
               So, you want to travel to space
             </p>
           </div>
@@ -114,15 +114,13 @@
               Subheading 2 - Barlow Condensed Regular - 14px - 2.35 Character
               Space
             </p>
-            <p class="text-sm tracking-[0.1469rem] font-sans-cond">
-              Avg. Distance
-            </p>
+            <p class="text-sm tracking-wide font-sans-cond">Avg. Distance</p>
           </div>
           <div>
             <p class="text-xl font-sans-normal mb-4">
               Nav Text - Barlow Condensed Regular - 16px - 2.7 Character Space
             </p>
-            <p class="text-base tracking-[0.1688rem] uppercase font-sans-cond">
+            <p class="text-base tracking-wider uppercase font-sans-cond">
               Europa
             </p>
           </div>
@@ -150,7 +148,7 @@
     </section>
 
     <section id="interactive-elements" class="my-16 mx-0">
-      <h2 class="uppercase text-2xl font-sans-cond tracking-[0.295rem]">
+      <h2 class="uppercase text-2xl font-sans-cond tracking-widest">
         <span class="opacity-25 font-semibold mr-2">03 </span>Interactive
         Elements
       </h2>

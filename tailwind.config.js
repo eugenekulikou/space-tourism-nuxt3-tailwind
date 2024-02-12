@@ -23,6 +23,12 @@ export default {
       "8xl": "6.25rem" /* 100px */,
       "9xl": "9.375rem" /* 150px */,
     },
+    letterSpacing:{
+      normal: '0',
+      wide: '0.1469rem',  /*  2.35 */
+      wider: '0.1688rem', /* 2.7px */
+      widest: '0.2969rem' /* 4.75px */
+    },
     extend: {},
   },
   plugins: [],
