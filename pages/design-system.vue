@@ -153,15 +153,101 @@
         Elements
       </h2>
 
-      <div id="explore-button" class="m-28">
-        <a href="#explore-button" class="cta-button">Explore</a>
+      <div
+        id="tabs"
+        class="w-full bg-white bg-opacity-5 flex justify-center my-12"
+      >
+        <nav>
+          <ul class="flex space-x-40 underline-indicators">
+            <li class="py-8">
+              <a href="#" class="uppercase text-white tracking-wider"
+                ><span class="font-bold mr-2">00</span>Active</a
+              >
+            </li>
+            <li class="py-8">
+              <a href="#" class="uppercase text-white tracking-wider"
+                ><span class="font-bold mr-2">01</span>Hovered</a
+              >
+            </li>
+            <li class="py-8">
+              <a href="#" class="uppercase text-white tracking-wider"
+                ><span class="font-bold mr-2">02</span>Idle</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
 
-      <div id="tabs" class=""></div>
+      <div class="flex">
+        <div class="basis-full flex flex-col space-y-12">
+          <div id="explore-button" class="m-28">
+            <a href="#explore-button" class="cta-button">Explore</a>
+          </div>
+        </div>
 
-      <div id="dots" class=""></div>
+        <div class="basis-full flex flex-col space-y-12">
+          <div class="flex space-x-4 justify-center underline-indicators">
+            <button
+              aria-selected="true"
+              class="uppercase text-white tracking-light font-sans-cond py-[0.5em]"
+            >
+              Moon
+            </button>
+            <button
+              aria-selected="false"
+              class="uppercase text-white tracking-light font-sans-cond py-[0.5em]"
+            >
+              Mars
+            </button>
+            <button
+              aria-selected="false"
+              class="uppercase text-white tracking-light font-sans-cond py-[0.5em]"
+            >
+              Europe
+            </button>
+          </div>
 
-      <div id="numbers" class=""></div>
+          <div id="dots" class="flex justify-center space-x-4">
+            <button
+              class="bg-white rounded-full border-0 aspect-square w-4 h-4 bg-opacity-25 hover:bg-opacity-50 aria-selected:bg-opacity-100 transition-all duration-400 ease-in-out"
+              aria-selected="true"
+            >
+              <span class="sr-only">slide title</span></button
+            ><button
+              class="bg-white rounded-full border-0 aspect-square w-4 h-4 bg-opacity-25 hover:bg-opacity-50 aria-selected:bg-opacity-100 transition-all duration-400 ease-in-out"
+              aria-selected="false"
+            >
+              <span class="sr-only">slide title</span></button
+            ><button
+              class="bg-white rounded-full border-0 aspect-square w-4 h-4 bg-opacity-25 hover:bg-opacity-50 aria-selected:bg-opacity-100 transition-all duration-400 ease-in-out"
+              aria-selected="false"
+            >
+              <span class="sr-only">slide title</span>
+            </button>
+          </div>
+
+          <div class="flex justify-center">
+            <div id="numbers" class="space-y-6">
+              <button
+                aria-selected="true"
+                class="text-4xl w-20 aspect-square rounded-full text-white grid place-content-center bg-dark border border-white border-solid font-serif aria-selected:text-dark aria-selected:opacity-100 opacity-25 aria-selected:bg-white hover:opacity-50 transition-opacity duration-300 ease-in-out"
+              >
+                1</button
+              ><button
+                aria-selected="false"
+                class="text-4xl w-20 aspect-square rounded-full text-white grid place-content-center bg-dark border border-white border-solid font-serif aria-selected:text-dark aria-selected:opacity-100 opacity-25 aria-selected:bg-white hover:opacity-50 transition-opacity duration-300 ease-in-out"
+              >
+                2</button
+              ><button
+                aria-selected="false"
+                class="text-4xl w-20 aspect-square rounded-full text-white grid place-content-center bg-dark border border-white border-solid font-serif aria-selected:text-dark aria-selected:opacity-100 opacity-25 aria-selected:bg-white hover:opacity-50 transition-opacity duration-300 ease-in-out"
+              >
+                3
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
 </template>
