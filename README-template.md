@@ -52,7 +52,9 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 My motivation is twofold: firstly, to explore the capabilities of Nuxt3 for static site generation and secondly, to enhance my overall web development skills. I am driven to achieve mastery in pixel-perfect design and to implement Tailwind's DRY (Don't Repeat Yourself) best practices, thereby creating a design system with easily readable and maintainable classes.
 
-In this project, I am embarking on my first venture with Nuxt3 to generate a static website. My objective is to attain a Light House score exceeding 99, coupled with impeccable Core Web Vitals statistics. The application will seamlessly connect to a CRM API or utilize plain markdown, facilitating edits by non-engineer staff. Leveraging robust @nuxt3 modules, including those for SEO, i18n, Nuxt Images, and social share previews, is central to my approach. Furthermore, I will integrate transitions and animations, providing rationale for each design choice."
+In this project, I am embarking on my first venture with Nuxt3 to generate a static website. My objective is to attain a Light House score exceeding 99, coupled with impeccable Core Web Vitals statistics. The application will seamlessly connect to a CRM API or utilize plain markdown, facilitating edits by non-engineer staff. Leveraging robust @nuxt3 modules, including those for SEO, i18n, Nuxt Images, and social share previews, is central to my approach. Furthermore, I will integrate transitions and animations, providing rationale for each design choice. 
+
+Furthermore, I am committed to exploring the boundaries of deployment options beyond Vercel, seeking alternative hosts to broaden my understanding of deployment strategies of Nuxt3.
 
 ### Built with
 
