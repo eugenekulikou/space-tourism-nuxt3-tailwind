@@ -1,1 +1,0 @@
-export { default } from "file:///home/eugene/Projects/portfolio/space-tourism-multi-page-website/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"

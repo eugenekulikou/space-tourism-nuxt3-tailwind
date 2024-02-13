@@ -126,7 +126,7 @@
           </div>
           <div>
             <p class="text-xl mb-4">Body Text</p>
-            <p class="text-base">
+            <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
               Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi
               neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium,

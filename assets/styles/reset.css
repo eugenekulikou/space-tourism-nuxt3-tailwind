@@ -2,6 +2,8 @@
 *,
 *::before,
 *::after {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -31,11 +33,24 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
+/* Set main app containers full size */
+html,
+body,
+#__nuxt,
+#__layout {
+  height: 100% !important;
+  width: 100% !important;
+}
+
 /* Set core body defaults */
 body {
   min-height: 100dvh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+
+  @apply font-sans-normal font-normal text-base min-h-dvh bg-dark text-light;
+
+  /* grid-template-rows: min-content 1fr; */
 }
 
 /* A elements that don't have a class get default styles */
