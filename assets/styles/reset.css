@@ -23,8 +23,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
-ol[role="list"] {
+ul[role='list'],
+ol[role='list'] {
   list-style: none;
 }
 
@@ -48,7 +48,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 
-  @apply font-sans-normal font-normal text-base min-h-dvh bg-dark text-light;
+  @apply min-h-dvh bg-dark font-sans-normal text-base font-normal text-light;
 
   /* grid-template-rows: min-content 1fr; */
 }

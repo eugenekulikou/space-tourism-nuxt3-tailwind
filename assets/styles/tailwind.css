@@ -11,10 +11,10 @@
 
 @layer components {
   .underline-indicators > * {
-    @apply border-b-[0.2rem] border-solid border-light  border-opacity-0 
-    transition-all duration-500 ease-in-out 
-    hover:border-opacity-50 
-    focus:border-opacity-50
-    cursor-pointer;
+    @apply cursor-pointer border-b-[0.2rem] border-solid  border-light 
+    border-opacity-0 transition-all duration-500 
+    ease-in-out 
+    hover:border-opacity-50
+    focus:border-opacity-50;
   }
 }

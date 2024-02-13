@@ -5,9 +5,8 @@
 </template>
 
 <style>
-@import url("~/assets/styles/tailwind.css");
-@import url("~/assets/styles/reset.css");
+@import url('~/assets/styles/tailwind.css');
+@import url('~/assets/styles/reset.css');
 
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&family=Bellefair&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&family=Bellefair&display=swap');
 </style>
-

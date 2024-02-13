@@ -2,14 +2,15 @@
   <div class="container mx-auto">
     <h1 class="text-4xl uppercase">Design system</h1>
 
-    <section id="colors" class="my-16 mx-0">
-      <h2 class="uppercase text-2xl font-sans-cond tracking-widest">
-        <span class="opacity-25 mr-2 font-semibold">01</span> colors
+    <section id="colors" class="mx-0 my-16">
+      <h2 class="font-sans-cond text-2xl uppercase tracking-widest">
+        <span class="mr-2 font-semibold opacity-25">01</span> colors
       </h2>
       <div class="flex space-x-2">
         <div class="flex-grow">
           <div
-            class="bg-dark text-white font-serif font-medium pt-12 px-4 pb-4 border border-solid border-white text-2xl"
+            class="border border-solid border-white bg-dark px-4 pb-4 pt-12 font-serif text-2xl
+              font-medium text-white"
           >
             #0B0D17
           </div>
@@ -18,7 +19,8 @@
         </div>
         <div class="flex-grow">
           <div
-            class="bg-light text-dark font-serif font-medium pt-12 px-4 pb-4 border border-solid border-white text-2xl"
+            class="border border-solid border-white bg-light px-4 pb-4 pt-12 font-serif text-2xl
+              font-medium text-dark"
           >
             #D0D6F9
           </div>
@@ -27,7 +29,8 @@
         </div>
         <div class="flex-grow">
           <div
-            class="bg-dark text-white font-serif font-medium pt-12 px-4 pb-4 border border-solid border-white text-2xl"
+            class="border border-solid border-white bg-dark px-4 pb-4 pt-12 font-serif text-2xl
+              font-medium text-white"
           >
             #FFFFFF
           </div>
@@ -37,95 +40,95 @@
       </div>
     </section>
 
-    <section id="subheadings" class="my-16 mx-0">
+    <section id="subheadings" class="mx-0 my-16">
       <div
         class="flex flex-col space-y-4 xl:flex-row xl:space-x-4 xl:space-y-0"
       >
         <p
-          class="text-2xl uppercase text-white tracking-widest font-sans-cond text-nowrap"
+          class="text-nowrap font-sans-cond text-2xl uppercase tracking-widest text-white"
         >
-          <span class="opacity-25 font-semibold mr-6">01</span>pick your
+          <span class="mr-6 font-semibold opacity-25">01</span>pick your
           destination
         </p>
         <p
-          class="text-2xl uppercase text-white tracking-widest font-sans-cond text-nowrap"
+          class="text-nowrap font-sans-cond text-2xl uppercase tracking-widest text-white"
         >
-          <span class="opacity-25 font-semibold mr-6">02</span>meet your crew
+          <span class="mr-6 font-semibold opacity-25">02</span>meet your crew
         </p>
         <p
-          class="text-2xl uppercase text-white tracking-widest font-sans-cond text-nowrap"
+          class="text-nowrap font-sans-cond text-2xl uppercase tracking-widest text-white"
         >
-          <span class="opacity-25 font-semibold mr-6">03</span>space launch 101
+          <span class="mr-6 font-semibold opacity-25">03</span>space launch 101
         </p>
       </div>
     </section>
 
-    <section id="typography" class="my-16 mx-0">
-      <h2 class="uppercase text-2xl font-sans-cond tracking-widest mb-12">
-        <span class="opacity-25 font-semibold mr-2">02 </span>Typography
+    <section id="typography" class="mx-0 my-16">
+      <h2 class="mb-12 font-sans-cond text-2xl uppercase tracking-widest">
+        <span class="mr-2 font-semibold opacity-25">02 </span>Typography
       </h2>
       <div class="flex">
         <div class="basis-full space-y-4">
           <div>
-            <p class="text-xl font-sans-normal">
+            <p class="font-sans-normal text-xl">
               Heading 1 - Bellefair Regular - 150px
             </p>
-            <p class="text-9xl font-serif uppercase leading-tight">Earth</p>
+            <p class="font-serif text-9xl uppercase leading-tight">Earth</p>
           </div>
           <div>
-            <p class="text-xl font-sans-normal">
+            <p class="font-sans-normal text-xl">
               Heading 2 - Bellefair Regular - 100px
             </p>
-            <p class="text-8xl font-serif uppercase">Venus</p>
+            <p class="font-serif text-8xl uppercase">Venus</p>
           </div>
           <div>
-            <p class="text-xl font-sans-normal">
+            <p class="font-sans-normal text-xl">
               Heading 3 - Bellefair Regular - 56px
             </p>
-            <p class="text-6xl uppercase font-serif">Jupiter & Saturn</p>
+            <p class="font-serif text-6xl uppercase">Jupiter & Saturn</p>
           </div>
           <div>
-            <p class="text-xl font-sans-normal">
+            <p class="font-sans-normal text-xl">
               Heading 4 - Bellefair Regular - 32px
             </p>
-            <p class="text-4xl uppercase font-serif">
+            <p class="font-serif text-4xl uppercase">
               Uranus, Neptune, & Pluto
             </p>
           </div>
           <div>
-            <p class="text-xl font-sans-normal">
+            <p class="font-sans-normal text-xl">
               Heading 5 - Barlow Condensed Regular - 28px - 4.75 Character Space
             </p>
-            <p class="text-2xl tracking-widest font-sans-cond uppercase">
+            <p class="font-sans-cond text-2xl uppercase tracking-widest">
               So, you want to travel to space
             </p>
           </div>
         </div>
 
-        <div class="basis-full flex flex-col space-y-12">
+        <div class="flex basis-full flex-col space-y-12">
           <div>
-            <p class="text-xl font-sans-normal">
+            <p class="font-sans-normal text-xl">
               Subheading 1 - Bellefair Regular - 28px
             </p>
-            <p class="text-2xl uppercase font-serif">384,400 km</p>
+            <p class="font-serif text-2xl uppercase">384,400 km</p>
           </div>
           <div>
-            <p class="text-xl font-sans-normal">
+            <p class="font-sans-normal text-xl">
               Subheading 2 - Barlow Condensed Regular - 14px - 2.35 Character
               Space
             </p>
-            <p class="text-sm tracking-wide font-sans-cond">Avg. Distance</p>
+            <p class="font-sans-cond text-sm tracking-wide">Avg. Distance</p>
           </div>
           <div>
-            <p class="text-xl font-sans-normal mb-4">
+            <p class="mb-4 font-sans-normal text-xl">
               Nav Text - Barlow Condensed Regular - 16px - 2.7 Character Space
             </p>
-            <p class="text-base tracking-wider uppercase font-sans-cond">
+            <p class="font-sans-cond text-base uppercase tracking-wider">
               Europa
             </p>
           </div>
           <div>
-            <p class="text-xl mb-4">Body Text</p>
+            <p class="mb-4 text-xl">Body Text</p>
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
               Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi
@@ -147,31 +150,31 @@
       </div>
     </section>
 
-    <section id="interactive-elements" class="my-16 mx-0">
-      <h2 class="uppercase text-2xl font-sans-cond tracking-widest">
-        <span class="opacity-25 font-semibold mr-2">03 </span>Interactive
+    <section id="interactive-elements" class="mx-0 my-16">
+      <h2 class="font-sans-cond text-2xl uppercase tracking-widest">
+        <span class="mr-2 font-semibold opacity-25">03 </span>Interactive
         Elements
       </h2>
 
       <div
         id="tabs"
-        class="w-full bg-white bg-opacity-5 flex justify-center my-12"
+        class="my-12 flex w-full justify-center bg-white bg-opacity-5"
       >
         <nav>
-          <ul class="flex space-x-40 underline-indicators">
+          <ul class="underline-indicators flex space-x-40">
             <li class="py-8">
-              <a href="#" class="uppercase text-white tracking-wider"
-                ><span class="font-bold mr-2">00</span>Active</a
+              <a href="#" class="uppercase tracking-wider text-white"
+                ><span class="mr-2 font-bold">00</span>Active</a
               >
             </li>
             <li class="py-8">
-              <a href="#" class="uppercase text-white tracking-wider"
-                ><span class="font-bold mr-2">01</span>Hovered</a
+              <a href="#" class="uppercase tracking-wider text-white"
+                ><span class="mr-2 font-bold">01</span>Hovered</a
               >
             </li>
             <li class="py-8">
-              <a href="#" class="uppercase text-white tracking-wider"
-                ><span class="font-bold mr-2">02</span>Idle</a
+              <a href="#" class="uppercase tracking-wider text-white"
+                ><span class="mr-2 font-bold">02</span>Idle</a
               >
             </li>
           </ul>
@@ -179,29 +182,29 @@
       </div>
 
       <div class="flex">
-        <div class="basis-full flex flex-col space-y-12">
+        <div class="flex basis-full flex-col space-y-12">
           <div id="explore-button" class="m-28">
             <a href="#explore-button" class="cta-button">Explore</a>
           </div>
         </div>
 
-        <div class="basis-full flex flex-col space-y-12">
-          <div class="flex space-x-4 justify-center underline-indicators">
+        <div class="flex basis-full flex-col space-y-12">
+          <div class="underline-indicators flex justify-center space-x-4">
             <button
               aria-selected="true"
-              class="uppercase text-white tracking-light font-sans-cond py-[0.5em]"
+              class="tracking-light py-[0.5em] font-sans-cond uppercase text-white"
             >
               Moon
             </button>
             <button
               aria-selected="false"
-              class="uppercase text-white tracking-light font-sans-cond py-[0.5em]"
+              class="tracking-light py-[0.5em] font-sans-cond uppercase text-white"
             >
               Mars
             </button>
             <button
               aria-selected="false"
-              class="uppercase text-white tracking-light font-sans-cond py-[0.5em]"
+              class="tracking-light py-[0.5em] font-sans-cond uppercase text-white"
             >
               Europe
             </button>
@@ -209,17 +212,20 @@
 
           <div id="dots" class="flex justify-center space-x-4">
             <button
-              class="bg-white rounded-full border-0 aspect-square w-4 h-4 bg-opacity-25 hover:bg-opacity-50 aria-selected:bg-opacity-100 transition-all duration-400 ease-in-out"
+              class="duration-400 aspect-square h-4 w-4 rounded-full border-0 bg-white bg-opacity-25
+                transition-all ease-in-out hover:bg-opacity-50 aria-selected:bg-opacity-100"
               aria-selected="true"
             >
               <span class="sr-only">slide title</span></button
             ><button
-              class="bg-white rounded-full border-0 aspect-square w-4 h-4 bg-opacity-25 hover:bg-opacity-50 aria-selected:bg-opacity-100 transition-all duration-400 ease-in-out"
+              class="duration-400 aspect-square h-4 w-4 rounded-full border-0 bg-white bg-opacity-25
+                transition-all ease-in-out hover:bg-opacity-50 aria-selected:bg-opacity-100"
               aria-selected="false"
             >
               <span class="sr-only">slide title</span></button
             ><button
-              class="bg-white rounded-full border-0 aspect-square w-4 h-4 bg-opacity-25 hover:bg-opacity-50 aria-selected:bg-opacity-100 transition-all duration-400 ease-in-out"
+              class="duration-400 aspect-square h-4 w-4 rounded-full border-0 bg-white bg-opacity-25
+                transition-all ease-in-out hover:bg-opacity-50 aria-selected:bg-opacity-100"
               aria-selected="false"
             >
               <span class="sr-only">slide title</span>
@@ -230,17 +236,26 @@
             <div id="numbers" class="space-y-6">
               <button
                 aria-selected="true"
-                class="text-4xl w-20 aspect-square rounded-full text-white grid place-content-center bg-dark border border-white border-solid font-serif aria-selected:text-dark aria-selected:opacity-100 opacity-25 aria-selected:bg-white hover:opacity-50 transition-opacity duration-300 ease-in-out"
+                class="grid aspect-square w-20 place-content-center rounded-full border border-solid
+                  border-white bg-dark font-serif text-4xl text-white opacity-25
+                  transition-opacity duration-300 ease-in-out hover:opacity-50
+                  aria-selected:bg-white aria-selected:text-dark aria-selected:opacity-100"
               >
                 1</button
               ><button
                 aria-selected="false"
-                class="text-4xl w-20 aspect-square rounded-full text-white grid place-content-center bg-dark border border-white border-solid font-serif aria-selected:text-dark aria-selected:opacity-100 opacity-25 aria-selected:bg-white hover:opacity-50 transition-opacity duration-300 ease-in-out"
+                class="grid aspect-square w-20 place-content-center rounded-full border border-solid
+                  border-white bg-dark font-serif text-4xl text-white opacity-25
+                  transition-opacity duration-300 ease-in-out hover:opacity-50
+                  aria-selected:bg-white aria-selected:text-dark aria-selected:opacity-100"
               >
                 2</button
               ><button
                 aria-selected="false"
-                class="text-4xl w-20 aspect-square rounded-full text-white grid place-content-center bg-dark border border-white border-solid font-serif aria-selected:text-dark aria-selected:opacity-100 opacity-25 aria-selected:bg-white hover:opacity-50 transition-opacity duration-300 ease-in-out"
+                class="grid aspect-square w-20 place-content-center rounded-full border border-solid
+                  border-white bg-dark font-serif text-4xl text-white opacity-25
+                  transition-opacity duration-300 ease-in-out hover:opacity-50
+                  aria-selected:bg-white aria-selected:text-dark aria-selected:opacity-100"
               >
                 3
               </button>
