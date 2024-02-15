@@ -24,9 +24,8 @@
       </li>
     </ul>
   </nav>
-    <!-- end of mobile nav-->
 
-    <nav role="navigation" class="hidden bg-white bg-opacity-15 backdrop-blur-xl md:block md:-mr-8 lg:-mr-12">
+  <nav role="navigation" class="hidden bg-white bg-opacity-15 backdrop-blur-xl md:block md:-mr-8 lg:-mr-12 lg:px-8">
     <ul class="underline-indicators flex space-x-8 md:mx-10 lg:mx-20">
       <li v-for="(link, index) in links" class="px-4 py-8">
         <NavigationLink

@@ -117,7 +117,9 @@
               Subheading 2 - Barlow Condensed Regular - 14px - 2.35 Character
               Space
             </p>
-            <p class="font-sans-cond text-sm tracking-wide">Avg. Distance</p>
+            <p class="font-sans-cond text-sm uppercase tracking-wide">
+              Avg. Distance
+            </p>
           </div>
           <div>
             <p class="mb-4 font-sans-normal text-xl">
@@ -129,7 +131,7 @@
           </div>
           <div>
             <p class="mb-4 text-xl">Body Text</p>
-            <p>
+            <p class="leading-8">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
               Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi
               neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium,
