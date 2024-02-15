@@ -11,5 +11,5 @@ module.exports = {
     'prettier-plugin-merge',
   ],
   // tailwindConfig: 'tailwind.config.js',
-  // tailwindAttributes: ['class', ':class'],
+  tailwindAttributes: ['class', ':class'],
 };

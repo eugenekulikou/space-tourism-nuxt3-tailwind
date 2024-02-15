@@ -1,31 +1,15 @@
 <template>
-  <header class="flex items-center justify-between">
-    <div class="px-8">
+  <!-- todo: find a way to group classes -->
+  <header
+    class="justify-space-between fixed top-0 flex h-[6rem] w-full items-center
+      justify-between px-8 lg:my-10 lg:px-12 lg:after:relative lg:after:z-40
+      lg:after:order-1 lg:after:-mr-8 lg:after:block lg:after:h-[.16rem]
+      lg:after:w-full lg:after:bg-light lg:after:bg-opacity-30 [&_>_nav]:order-2"
+  >
+    <div class="relative aspect-square min-w-12 lg:mx-0 lg:mr-16">
       <img src="@/assets/shared/logo.svg" alt="Space tourism logo" />
     </div>
-    <nav class="bg-white bg-opacity-5">
-      <ul class="underline-indicators flex space-x-8">
-        <li class="py-8">
-          <a href="#" class="font-sans-cond uppercase tracking-wider text-white"
-            ><span class="mr-2 font-bold">00</span>Home</a
-          >
-        </li>
-        <li class="py-8">
-          <a href="#" class="font-sans-cond uppercase tracking-wider text-white"
-            ><span class="mr-2 font-bold">01</span>Destination</a
-          >
-        </li>
-        <li class="py-8">
-          <a href="#" class="font-sans-cond uppercase tracking-wider text-white"
-            ><span class="mr-2 font-bold">02</span>Crew</a
-          >
-        </li>
-        <li class="py-8">
-          <a href="#" class="font-sans-cond uppercase tracking-wider text-white"
-            ><span class="mr-2 font-bold">03</span>Technology</a
-          >
-        </li>
-      </ul>
-    </nav>
+
+    <NavigationMenu />
   </header>
 </template>
