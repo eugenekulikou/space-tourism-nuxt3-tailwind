@@ -9,7 +9,7 @@
 
   <LayoutHeader class="z-20" />
 
-  <div class="h-dvh pt-24">
+  <div class="h-dvh">
     <slot></slot>
   </div>
 </template>

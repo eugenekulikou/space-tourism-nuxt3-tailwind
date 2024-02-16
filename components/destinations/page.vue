@@ -1,10 +1,9 @@
 <template>
   <main
     id="main"
-    class="grid gap-8 pb-12 text-center [grid-template-areas:'title''image''tabs''content']
-      lg:grid-cols-[minmax(2rem,_1fr)_repeat(2,_minmax(0,_40rem))_minmax(2rem,_1fr)]
-      lg:items-stretch lg:justify-start lg:gap-x-32 lg:gap-y-8 lg:pt-28 lg:text-start
-      lg:[grid-template-areas:'._title_title_.''._image_tabs_.''._image_content_.']"
+    class="grid-areas-destinations-mobile lg:grid-areas-destinations-desktop
+      lg:grid-cols-default grid gap-8 pb-12 pt-28 text-center lg:items-stretch
+      lg:justify-start lg:gap-x-32 lg:gap-y-8 lg:pt-48 lg:text-start"
   >
     <h1
       class="mx-8 text-nowrap text-start font-sans-cond text-2xl uppercase tracking-widest

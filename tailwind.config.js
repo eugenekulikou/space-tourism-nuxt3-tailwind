@@ -29,7 +29,22 @@ export default {
         light: 'hsl(var(--color-light) / <alpha-value>)',
         dark: 'hsl(var(--color-dark) / <alpha-value>)',
       },
+      gridTemplateColumns: {
+        default:
+          'minmax(2rem, 1fr) repeat(2, minmax(0, 40rem)) minmax(2rem, 1fr)',
+      },
+      gridTemplateAreas: {
+        'destinations-mobile': ['title', 'image', 'tabs', 'content'],
+        'destinations-desktop': [
+          '. title title .',
+          '. image tabs .',
+          '. image content .',
+        ],
+      },
     },
   },
-  plugins: [],
+  plugins: [require('@savvywombat/tailwindcss-grid-areas')],
+  variants: {
+    gridTemplateAreas: ['responsive'],
+  },
 };

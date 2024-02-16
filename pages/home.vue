@@ -1,11 +1,11 @@
 <template>
   <main id="main" class="h-full">
     <div
-      class="bg-bottom-center bg-bottom-center bg-bottom-left grid h-full place-items-center
+      class="bg-bottom-center bg-bottom-center bg-bottom-left lg:grid-cols-default grid
+        h-full place-items-center
         bg-[url('@/assets/images/pages/home/background-home-mobile.jpg')] bg-cover px-4
         pb-[max(4rem,_5vh)] pt-[max(4rem,_20vh)] text-center
         sm:bg-[url('@/assets/images/pages/home/background-home-tablet.jpg')]
-        lg:grid-cols-[minmax(2rem,_1fr)_repeat(2,_minmax(0,_40rem))_minmax(2rem,_1fr)]
         lg:items-end lg:gap-[var(--container-gap,_2rem)]
         lg:bg-[url('@/assets/images/pages/home/background-home-desktop.jpg')]
         lg:pb-[max(6rem,_20vh)] lg:text-left [&_>_*]:max-w-[50ch]
