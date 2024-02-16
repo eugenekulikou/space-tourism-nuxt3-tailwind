@@ -1,8 +1,8 @@
 <template>
   <main id="main" class="h-full">
     <div
-      class="bg-bottom-center bg-bottom-center bg-bottom-left lg:grid-cols-default grid
-        h-full place-items-center
+      class="bg-bottom-center bg-bottom-left lg:grid-cols-default grid h-full
+        place-items-center
         bg-[url('@/assets/images/pages/home/background-home-mobile.jpg')] bg-cover px-4
         pb-[max(4rem,_5vh)] pt-[max(4rem,_20vh)] text-center
         sm:bg-[url('@/assets/images/pages/home/background-home-tablet.jpg')]

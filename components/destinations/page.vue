@@ -2,8 +2,13 @@
   <main
     id="main"
     class="grid-areas-destinations-mobile lg:grid-areas-destinations-desktop
-      lg:grid-cols-default grid gap-8 pb-12 pt-28 text-center lg:items-stretch
-      lg:justify-start lg:gap-x-32 lg:gap-y-8 lg:pt-48 lg:text-start"
+      lg:grid-cols-default bg-bottom-center bg-bottom-left grid h-full gap-8
+      bg-[url('@/assets/images/pages/destination/background-destination-mobile.jpg')]
+      bg-cover pb-12 pt-28 text-center
+      sm:bg-[url('@/assets/images/pages/destination/background-destination-tablet.jpg')]
+      lg:items-stretch lg:justify-start lg:gap-x-32 lg:gap-y-8
+      lg:bg-[url('@/assets/images/pages/destination/background-destination-desktop.jpg')]
+      lg:pt-48 lg:text-start"
   >
     <h1
       class="mx-8 text-nowrap text-start font-sans-cond text-2xl uppercase tracking-widest
