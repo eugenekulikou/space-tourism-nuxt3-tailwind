@@ -1,4 +1,4 @@
-export const usePageHeading = (string) => {
-  const [prefix, ...heading] = string.split(' ');
+export const usePageHeading = (pageHeading: string) => {
+  const [prefix, ...heading] = pageHeading.split(' ');
   return [prefix, heading.join(' ')];
 };

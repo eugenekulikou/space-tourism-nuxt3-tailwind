@@ -1,12 +1,12 @@
 module.exports = {
   env: {
-    es6: true,
+    es8: true,
     browser: true,
-    es2021: true,
   },
-  extends: ['plugin:nuxt/recommended'],
+  extends: ['eslint:recommended', 'plugin:nuxt/recommended'],
+  parser: 'babel-eslint',
   parserOptions: {
-    ecmaVersion: 12,
+    ecmaVersion: 8,
     sourceType: 'module',
   },
   rules: {
