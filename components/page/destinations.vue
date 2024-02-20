@@ -1,14 +1,13 @@
 <template>
   <main
     id="main"
-    class="grid-areas-destinations-mobile lg:grid-areas-destinations-desktop
-      lg:grid-cols-default bg-bottom-center bg-bottom-left grid h-full gap-8
+    class="bg-bottom-center bg-bottom-left grid h-full gap-8
       bg-[url('@/assets/images/pages/destination/background-destination-mobile.jpg')]
-      bg-cover pb-12 pt-28 text-center
+      bg-cover pb-12 pt-28 text-center grid-areas-destinations-mobile
       sm:bg-[url('@/assets/images/pages/destination/background-destination-tablet.jpg')]
-      lg:items-stretch lg:justify-start lg:gap-x-32 lg:gap-y-8
+      lg:grid-cols-default lg:items-stretch lg:justify-start lg:gap-x-32 lg:gap-y-8
       lg:bg-[url('@/assets/images/pages/destination/background-destination-desktop.jpg')]
-      lg:pt-48 lg:text-start"
+      lg:pt-48 lg:text-start lg:grid-areas-destinations-desktop"
   >
     <h1
       class="mx-8 text-nowrap text-start font-sans-cond text-2xl uppercase tracking-widest
@@ -32,22 +31,24 @@
       class="underline-indicators flex justify-center space-x-8 [grid-area:tabs]
         lg:justify-start"
     >
-      <button
-        v-for="link in destinationsLinks"
+      <NuxtLink
+        v-for="link in childrenLinks"
         aria-selected="true"
         class="py-[0.5em] font-sans-cond uppercase tracking-wider text-white"
+        tag="button"
+        :to="link.to"
       >
         {{ link.label }}
-      </button>
+      </NuxtLink>
     </div>
 
     <article class="mx-auto [grid-area:content] lg:mx-0">
       <h2 class="font-serif text-8xl uppercase leading-tight">
-        {{ name }}
+        {{ pageData.name }}
       </h2>
 
       <p class="w-[50ch] text-center leading-8 lg:text-left">
-        {{ description }}
+        {{ pageData.description }}
       </p>
 
       <div
@@ -56,7 +57,7 @@
           lg:justify-start"
       >
         <div
-          v-for="([title, content], index) in meta.map(Object.values)"
+          v-for="([title, content], index) in pageData.meta.map(Object.values)"
           :key="index"
           class="space-y-2"
         >
@@ -77,8 +78,15 @@ defineComponent({
 </script>
 
 <script lang="ts" setup>
-import type { IDestinationPageProps } from '@/types';
+import type { IDestinationPageProps, TNavigation } from '@/types';
 
-const props = defineProps<IDestinationPageProps>();
-const [prefix, heading] = usePageHeading(props.heading);
+interface Props {
+  pageData: IDestinationPageProps;
+  childrenLinks: TNavigation;
+}
+
+const props = defineProps<Props>();
+const { pageData } = props;
+
+const [prefix, heading] = usePageHeading(pageData.heading);
 </script>

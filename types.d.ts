@@ -14,10 +14,21 @@ interface IDestinationMeta {
 }
 
 export interface IDestinationPageProps {
+  slug: string;
   heading: string;
   name: string;
-  images: IImage[];
-  destinationsLinks: ILink[];
+  links: ILink[];
+  images: any;
   description: string;
   meta: IDestinationMeta[];
+}
+
+export type TNavigation = Record<
+  string,
+  INavLink[] | SerializedObject<INavLink[]>
+>;
+
+export interface INavLink {
+  to: string;
+  label: string;
 }
