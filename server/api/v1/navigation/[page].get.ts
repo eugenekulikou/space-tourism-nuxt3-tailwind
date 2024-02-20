@@ -14,10 +14,15 @@ export default defineEventHandler(async (event): Promise<INavLink[]> => {
           label: name,
         }));
       } else {
-        navigationData[parent] = Object.keys(data).map((parent) => ({
-          to: `/${parent}`,
-          label: parent,
-        }));
+        navigationData[parent] = Object.keys(data).map((parent) => {
+          const { slug: firstChildSlug } = data[parent][0];
+          const to = parent === 'home' ? '/' : `/${parent}/${firstChildSlug}`;
+
+          return {
+            to,
+            label: parent,
+          };
+        });
       }
     }
 
