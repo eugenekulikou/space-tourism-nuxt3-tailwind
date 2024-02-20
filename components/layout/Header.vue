@@ -10,6 +10,16 @@
       <img src="@/assets/shared/logo.svg" alt="Space tourism logo" />
     </div>
 
-    <NavigationMenu />
+    <NavigationMenu :nav-links="navLinks" />
   </header>
 </template>
+
+<script lang="ts" setup>
+import type { ILink } from '@/types';
+
+interface Props {
+  navLinks: ILink[];
+}
+
+const props = defineProps<Props>();
+</script>

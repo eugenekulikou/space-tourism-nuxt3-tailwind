@@ -1,7 +1,9 @@
-import data from './data';
-import type { TNavigation } from '@/types';
+import data from '@/starter-resources/data';
+import type { INavLink, TNavigation } from '@/types';
 
-export default defineEventHandler(async (event): Promise<TNavigation> => {
+export default defineEventHandler(async (event): Promise<INavLink[]> => {
+  const { page } = event.context.params as Record<string, string>;
+
   return new Promise((resolve, reject) => {
     const navigationData: TNavigation = {};
 
@@ -19,6 +21,6 @@ export default defineEventHandler(async (event): Promise<TNavigation> => {
       }
     }
 
-    resolve(navigationData);
+    resolve(navigationData[page]);
   });
 });

@@ -15,7 +15,7 @@
     <NavigationCloseButton :isOpened="sidebarIsOpen" @click="toggleSidebar" />
 
     <ul class="flex flex-col space-y-8 p-8">
-      <li v-for="(link, index) in links">
+      <li v-for="(link, index) in navLinks">
         <NavigationLink
           :to="link.to"
           :index="'0' + index"
@@ -27,7 +27,7 @@
 
   <nav role="navigation" class="hidden bg-white bg-opacity-15 backdrop-blur-xl md:block md:-mr-8 lg:-mr-12 lg:px-8">
     <ul class="underline-indicators flex space-x-8 md:mx-10 lg:mx-20">
-      <li v-for="(link, index) in links" class="px-4 py-8">
+      <li v-for="(link, index) in navLinks" class="px-4 py-8">
         <NavigationLink
           :to="link.to"
           :index="'0' + index"
@@ -38,20 +38,20 @@
   </nav>
 </template>
 
-<script setup>
+<script lang="ts" setup>
+import type { ILink } from '@/types';
 import { onClickOutside } from '@vueuse/core';
+
+interface Props {
+  navLinks: ILink[];
+}
+
+const props = defineProps<Props>();
+const { navLinks } = props;
 
 const sidebarNavRef = ref(null);
 const sidebarIsOpen = ref(false);
 const toggleSidebar = () => (sidebarIsOpen.value = !sidebarIsOpen.value);
 
 onClickOutside(sidebarNavRef, (event) => (sidebarIsOpen.value = false));
-
-// todo: load menu data from endpoint
-const links = [
-  { label: 'home', to: '#' },
-  { label: 'destination', to: '#' },
-  { label: 'crew', to: '#' },
-  { label: 'technology', to: '#' },
-];
 </script>

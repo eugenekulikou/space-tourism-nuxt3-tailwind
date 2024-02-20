@@ -7,9 +7,15 @@
     >Skip to content</a
   >
 
-  <LayoutHeader class="z-20" />
+  <LayoutHeader :nav-links="navLinks" class="z-20" />
 
   <div class="h-dvh">
     <slot></slot>
   </div>
 </template>
+
+<script lang="ts" setup>
+const { useNavigationData } = useApiData();
+
+const navLinks = await useNavigationData('home');
+</script>
