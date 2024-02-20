@@ -12,6 +12,8 @@ definePageMeta({
 const { matched, ...route } = useRoute();
 const { name } = route;
 
+const { usePageData, useNavigationData } = useApiData();
+
 const data = await usePageData(name as string);
-const { data: navigation } = await useNavigation();
+const { data: navigation } = await useNavigationData();
 </script>
