@@ -21,5 +21,5 @@ interface Props {
   navLinks: ILink[];
 }
 
-const props = defineProps<Props>();
+defineProps<Props>();
 </script>

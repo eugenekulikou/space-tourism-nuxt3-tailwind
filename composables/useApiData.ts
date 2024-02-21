@@ -1,4 +1,4 @@
-import type { INavLink, TNavigation } from '@/types';
+import type { TResponseData, TNavigation } from '@/types';
 
 export const useApiData = () => {
   const usePageData = async (slug: string | string[]): Promise<any> => {

@@ -15,7 +15,8 @@
 </template>
 
 <script lang="ts" setup>
-const { useNavigationData } = useApiData();
+const ROOT_PAGE_NAME = 'home';
 
-const navLinks = await useNavigationData('home');
+const { useNavigationData } = useApiData();
+const navLinks = await useNavigationData(ROOT_PAGE_NAME);
 </script>

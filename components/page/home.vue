@@ -13,29 +13,35 @@
     >
       <div>
         <h1 class="font-sans-cond text-2xl uppercase tracking-widest">
-          So, you want to travel to<br />
-          <span class="font-serif text-8xl uppercase leading-tight lg:text-9xl"
-            >Space</span
+          {{ leadHeading }}<br />
+          <span
+            class="font-serif text-8xl uppercase leading-tight lg:text-9xl"
+            >{{ accentHeading }}</span
           >
         </h1>
-        <p>
-          Let’s face it; if you want to go to space, you might as well genuinely
-          go to outer space and not hover kind of on the edge of it. Well sit
-          back, and relax because we’ll give you a truly out of this world
-          experience!
+        <p class="leading-8">
+          {{ description }}
         </p>
       </div>
 
       <div>
-        <UiCTAButton to="#" />
+        <UiCTAButton :to="button.to" :label="button.label" />
       </div>
     </div>
   </main>
 </template>
 
 <script lang="ts" setup>
+import type { THomePageResponse } from '@/types';
+
 interface Props {
-  [key: string]: string;
+  pageData: THomePageResponse;
 }
 const props = defineProps<Props>();
+
+const { pageData } = props;
+const { heading, button, description } = pageData.content;
+
+const { usePostfixHeading } = usePageHeading();
+const [leadHeading, accentHeading] = usePostfixHeading(heading);
 </script>

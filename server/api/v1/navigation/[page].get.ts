@@ -1,7 +1,7 @@
-import data from '@/starter-resources/data';
-import type { INavLink, TNavigation } from '@/types';
+import { data } from '@/data/page-data';
+import type { IApiData, ILink, IPageData, TNavigation } from '@/types';
 
-export default defineEventHandler(async (event): Promise<INavLink[]> => {
+export default defineEventHandler(async (event): Promise<ILink[]> => {
   const { page } = event.context.params as Record<string, string>;
 
   return new Promise((resolve, reject) => {
@@ -9,17 +9,19 @@ export default defineEventHandler(async (event): Promise<INavLink[]> => {
 
     for (const [parent, children] of Object.entries(data)) {
       if (children.length > 1) {
-        navigationData[parent] = children.map(({ name, slug }) => ({
-          to: `/${parent}/${slug}`,
-          label: name,
-        }));
+        navigationData[parent] = children.map((child: IPageData) => {
+          const { name, slug } = child;
+
+          return { to: `/${parent}/${slug}`, label: name };
+        });
       } else {
         navigationData[parent] = Object.keys(data).map((parent) => {
-          const { slug: firstChildSlug } = data[parent][0];
-          const to = parent === 'home' ? '/' : `/${parent}/${firstChildSlug}`;
+          // @ts-ignore
+          const [firstChild] = data[parent];
+          const { slug } = firstChild;
 
           return {
-            to,
+            to: parent === 'home' ? '/' : `/${parent}/${slug}`,
             label: parent,
           };
         });

@@ -44,11 +44,11 @@
 
     <article class="mx-auto [grid-area:content] lg:mx-0">
       <h2 class="font-serif text-8xl uppercase leading-tight">
-        {{ pageData.name }}
+        {{ name }}
       </h2>
 
       <p class="w-[50ch] text-center leading-8 lg:text-left">
-        {{ pageData.description }}
+        {{ description }}
       </p>
 
       <div
@@ -57,14 +57,14 @@
           lg:justify-start"
       >
         <div
-          v-for="([title, content], index) in pageData.meta.map(Object.values)"
+          v-for="([title, info], index) in content.info.map(Object.values)"
           :key="index"
           class="space-y-2"
         >
           <h3 class="font-sans-cond text-sm uppercase tracking-wide">
             {{ title }}
           </h3>
-          <p class="font-serif text-2xl uppercase">{{ content }}</p>
+          <p class="font-serif text-2xl uppercase">{{ info }}</p>
         </div>
       </div>
     </article>
@@ -78,15 +78,18 @@ defineComponent({
 </script>
 
 <script lang="ts" setup>
-import type { IDestinationPageProps, TNavigation } from '@/types';
+import type { TDestinationsPageResponse, TNavigation } from '@/types';
 
 interface Props {
-  pageData: IDestinationPageProps;
+  pageData: TDestinationsPageResponse;
   childrenLinks: TNavigation;
 }
 
 const props = defineProps<Props>();
 const { pageData } = props;
+const { content, name } = pageData;
+const { heading: pageHeading, description, images, info } = content;
 
-const [prefix, heading] = usePageHeading(pageData.heading);
+const { usePrefixedHeading } = usePageHeading();
+const [prefix, heading] = usePrefixedHeading(pageHeading);
 </script>

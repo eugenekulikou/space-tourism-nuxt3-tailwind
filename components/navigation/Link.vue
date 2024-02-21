@@ -12,6 +12,6 @@
 </template>
 
 <script setup>
-// todo: add props interface
+/* todo: add props interface */
 const props = defineProps(['to', 'label', 'index']);
 </script>
