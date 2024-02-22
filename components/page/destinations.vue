@@ -28,15 +28,15 @@
     </div>
 
     <div
-      class="underline-indicators flex justify-center space-x-8 [grid-area:tabs]
+      class="underline-indicators flex h-10 justify-center space-x-8 [grid-area:tabs]
         lg:justify-start"
     >
       <NuxtLink
         v-for="link in childrenLinks"
-        aria-selected="true"
-        class="py-[0.5em] font-sans-cond uppercase tracking-wider text-white"
-        tag="button"
+        class="pb-0 font-sans-cond uppercase tracking-wider text-white"
+        :aria-selected="link.to === $route.path"
         :to="link.to"
+        tag="button"
       >
         {{ link.label }}
       </NuxtLink>

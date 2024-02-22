@@ -2,6 +2,7 @@
   <NuxtLink
     tag="a"
     :to="to"
+    :aria-selected="ariaSelected"
     class="font-sans-cond uppercase tracking-wider text-white"
     ><span
       aria-hidden="true"
@@ -13,5 +14,5 @@
 
 <script setup>
 /* todo: add props interface */
-const props = defineProps(['to', 'label', 'index']);
+const props = defineProps(['to', 'label', 'index', 'ariaSelected']);
 </script>

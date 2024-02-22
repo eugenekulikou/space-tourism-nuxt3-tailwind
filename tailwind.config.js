@@ -33,12 +33,20 @@ export default {
         default:
           'minmax(2rem, 1fr) repeat(2, minmax(0, 40rem)) minmax(2rem, 1fr)',
       },
+      /* Does not respect hot-reload, server restart required */
       gridTemplateAreas: {
         'destinations-mobile': ['title', 'image', 'tabs', 'content'],
         'destinations-desktop': [
           '. title title .',
           '. image tabs .',
           '. image content .',
+        ],
+        'crew-mobile': ['title', 'image', 'dots-nav', 'content'],
+        'crew-tablet': ['title', 'content', 'dots-nav', 'image'],
+        'crew-desktop': [
+          '. title image .',
+          '. content image .',
+          '. dots-nav image .',
         ],
       },
     },
