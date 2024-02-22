@@ -34,12 +34,14 @@ interface IDestinationsPageContent {
 }
 
 interface ICrewPageContent {
+  heading: string;
   images: IImageSrc;
   role: string;
   bio: string;
 }
 
 interface ITechnologyPageContent {
+  heading: string;
   images: {
     portrait: string;
     landscape: string;

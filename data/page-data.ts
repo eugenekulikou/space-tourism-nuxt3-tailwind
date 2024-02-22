@@ -26,8 +26,8 @@ export const data: IApiData = {
       content: {
         heading: '01 pick your destination',
         images: {
-          png: './assets/destination/image-moon.png',
-          webp: './assets/destination/image-moon.webp',
+          png: './assets/images/pages/destination/image-moon.png',
+          webp: './assets/images/pages/destination/image-moon.webp',
           alt: 'The image of the Moon',
         },
         description:
@@ -50,8 +50,8 @@ export const data: IApiData = {
       content: {
         heading: '01 pick your destination',
         images: {
-          png: './assets/destination/image-mars.png',
-          webp: './assets/destination/image-mars.webp',
+          png: './assets/images/pages/destination/image-mars.png',
+          webp: './assets/images/pages/destination/image-mars.webp',
           alt: 'The image of Mars',
         },
         description:
@@ -75,8 +75,8 @@ export const data: IApiData = {
       content: {
         heading: '01 pick your destination',
         images: {
-          png: './assets/destination/image-europa.png',
-          webp: './assets/destination/image-europa.webp',
+          png: './assets/images/pages/destination/image-europa.png',
+          webp: './assets/images/pages/destination/image-europa.webp',
           alt: 'The image of  Europa, the satelite of the Jupiter',
         },
         description:
@@ -99,8 +99,8 @@ export const data: IApiData = {
       content: {
         heading: '01 pick your destination',
         images: {
-          png: './assets/destination/image-titan.png',
-          webp: './assets/destination/image-titan.webp',
+          png: './assets/images/pages/destination/image-titan.png',
+          webp: './assets/images/pages/destination/image-titan.webp',
           alt: '',
         },
         description:
@@ -123,9 +123,10 @@ export const data: IApiData = {
       slug: 'douglas-hurley',
       name: 'Douglas Hurley',
       content: {
+        heading: '02 Meet your crew',
         images: {
-          png: './assets/crew/image-douglas-hurley.png',
-          webp: './assets/crew/image-douglas-hurley.webp',
+          png: './assets/images/pages/crew/image-douglas-hurley.png',
+          webp: './assets/images/pages/crew/image-douglas-hurley.webp',
           alt: '',
         },
         role: 'Commander',
@@ -139,9 +140,10 @@ export const data: IApiData = {
       slug: 'mark-shuttleworth',
       name: 'Mark Shuttleworth',
       content: {
+        heading: '02 Meet your crew',
         images: {
-          png: './assets/crew/image-mark-shuttleworth.png',
-          webp: './assets/crew/image-mark-shuttleworth.webp',
+          png: './assets/images/pages/crew/image-mark-shuttleworth.png',
+          webp: './assets/images/pages/crew/image-mark-shuttleworth.webp',
           alt: '',
         },
         role: 'Mission Specialist',
@@ -155,9 +157,10 @@ export const data: IApiData = {
       slug: 'victor-glover',
       name: 'Victor Glover',
       content: {
+        heading: '02 Meet your crew',
         images: {
-          png: './assets/crew/image-victor-glover.png',
-          webp: './assets/crew/image-victor-glover.webp',
+          png: './assets/images/pages/crew/image-victor-glover.png',
+          webp: './assets/images/pages/crew/image-victor-glover.webp',
           alt: '',
         },
         role: 'Pilot',
@@ -171,9 +174,10 @@ export const data: IApiData = {
       slug: 'anousheh-ansari',
       name: 'Anousheh Ansari',
       content: {
+        heading: '02 Meet your crew',
         images: {
-          png: './assets/crew/image-anousheh-ansari.png',
-          webp: './assets/crew/image-anousheh-ansari.webp',
+          png: './assets/images/pages/crew/image-anousheh-ansari.png',
+          webp: './assets/images/pages/crew/image-anousheh-ansari.webp',
           alt: '',
         },
         role: 'Flight Engineer',
@@ -189,9 +193,12 @@ export const data: IApiData = {
       slug: 'launch-vehicle',
       name: 'Launch vehicle',
       content: {
+        heading: '03 Meet your crew',
         images: {
-          portrait: './assets/technology/image-launch-vehicle-portrait.jpg',
-          landscape: './assets/technology/image-launch-vehicle-landscape.jpg',
+          portrait:
+            './assets/images/pages/technology/image-launch-vehicle-portrait.jpg',
+          landscape:
+            './assets/images/pages/technology/image-launch-vehicle-landscape.jpg',
           alt: '',
         },
         description:
@@ -205,9 +212,12 @@ export const data: IApiData = {
       slug: 'spaceport',
       name: 'Spaceport',
       content: {
+        heading: '03 Meet your crew',
         images: {
-          portrait: './assets/technology/image-spaceport-portrait.jpg',
-          landscape: './assets/technology/image-spaceport-landscape.jpg',
+          portrait:
+            './assets/images/pages/technology/image-spaceport-portrait.jpg',
+          landscape:
+            './assets/images/pages/technology/image-spaceport-landscape.jpg',
           alt: '',
         },
         description:
@@ -221,9 +231,12 @@ export const data: IApiData = {
       slug: 'space-capsule',
       name: 'Space capsule',
       content: {
+        heading: '03 Meet your crew',
         images: {
-          portrait: './assets/technology/image-space-capsule-portrait.jpg',
-          landscape: './assets/technology/image-space-capsule-landscape.jpg',
+          portrait:
+            './assets/images/pages/technology/image-space-capsule-portrait.jpg',
+          landscape:
+            './assets/images/pages/technology/image-space-capsule-landscape.jpg',
           alt: '',
         },
         description:
