@@ -8,7 +8,7 @@ export const data: IApiData = {
       content: {
         heading: 'So, you want to travel to Space',
         button: {
-          to: '#explore-button',
+          to: '/destinations',
           label: 'Explore',
         },
         description:

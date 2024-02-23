@@ -10,7 +10,7 @@
       lg:bg-[url('/images/pages/crew/background-crew-desktop.jpg')] lg:pb-0 lg:pt-48
       lg:text-start lg:grid-areas-crew-desktop"
   >
-    <UiPageHeading
+    <PageHeading
       class="mx-auto [grid-area:title] lg:mx-0 lg:self-center"
       :heading="heading"
     />
@@ -39,22 +39,7 @@
       </p>
     </article>
 
-    <div
-      class="flex justify-center space-x-6 [grid-area:dots-nav] lg:justify-start
-        lg:self-start"
-    >
-      <NuxtLink
-        v-for="link in childrenLinks"
-        tag="a"
-        :to="link.to"
-        :alt="link.label"
-        class="duration-400 h-4 w-4 rounded-full border-0 bg-white bg-opacity-25 transition-all
-          ease-in-out hover:bg-opacity-50 aria-selected:bg-opacity-100"
-        :aria-selected="link.to === $route.path"
-      >
-        <span class="sr-only">slide title</span>
-      </NuxtLink>
-    </div>
+    <PageCrewNav class="[grid-area:dots-nav]" :links="childrenLinks" />
   </main>
 </template>
 

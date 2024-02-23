@@ -25,7 +25,7 @@
       </div>
 
       <div>
-        <UiCTAButton :to="button.to" :label="button.label" />
+        <PageHomeCTAButton :to="button.to" :label="button.label" />
       </div>
     </div>
   </main>

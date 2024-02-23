@@ -10,7 +10,7 @@
       lg:bg-[url('/images/pages/technology/background-technology-desktop.jpg')]
       lg:pt-48 lg:text-start lg:grid-areas-technology-desktop 2xl:justify-evenly"
   >
-    <UiPageHeading
+    <PageHeading
       class="mx-auto [grid-area:title] md:mx-8 lg:mx-0"
       :heading="heading"
     />
@@ -19,21 +19,7 @@
       class="flex flex-col items-center space-y-8 [grid-area:content] lg:flex-row
         lg:space-x-20"
     >
-      <div
-        class="flex justify-center space-x-6 lg:flex-col lg:space-x-0 lg:space-y-6"
-      >
-        <NuxtLink
-          v-for="(link, index) in childrenLinks"
-          :to="link.to"
-          :aria-selected="link.to === $route.fullPath"
-          class="grid h-20 w-20 place-content-center rounded-full border border-solid
-            border-white bg-dark font-serif text-4xl text-white opacity-25
-            transition-opacity duration-300 ease-in-out hover:opacity-50
-            aria-selected:bg-white aria-selected:text-dark aria-selected:opacity-100"
-        >
-          {{ index + 1 }}</NuxtLink
-        >
-      </div>
+      <PageTechnologyNav :links="childrenLinks" />
 
       <article class="mx-auto space-y-8 lg:mx-0">
         <header class="space-y-4">

@@ -9,10 +9,7 @@
       lg:bg-[url('/images/pages/destination/background-destination-desktop.jpg')]
       lg:pt-48 lg:text-start lg:grid-areas-destinations-desktop"
   >
-    <UiPageHeading
-      class="mx-auto [grid-area:title] lg:mx-0"
-      :heading="heading"
-    />
+    <PageHeading class="mx-auto [grid-area:title] lg:mx-0" :heading="heading" />
 
     <figure
       class="flex max-w-[10.625rem] items-center place-self-center [grid-area:image]
@@ -27,20 +24,7 @@
       />
     </figure>
 
-    <div
-      class="underline-indicators flex h-10 justify-center space-x-8 [grid-area:tabs]
-        lg:justify-start"
-    >
-      <NuxtLink
-        v-for="link in childrenLinks"
-        class="pb-0 font-sans-cond uppercase tracking-wider text-white"
-        :aria-selected="link.to === $route.path"
-        :to="link.to"
-        tag="button"
-      >
-        {{ link.label }}
-      </NuxtLink>
-    </div>
+    <PageDestinationsNav class="[grid-area:tabs]" :links="childrenLinks" />
 
     <article class="mx-auto pb-12 [grid-area:content] lg:mx-0 lg:pb-0">
       <header>
@@ -59,7 +43,7 @@
           lg:justify-start"
       >
         <div
-          v-for="([title, info], index) in content.info.map(Object.values)"
+          v-for="([title, info], index) in details.map(Object.values)"
           :key="index"
           class="space-y-2"
         >
@@ -89,5 +73,5 @@ interface Props {
 
 const props = defineProps<Props>();
 const { content, name } = props.pageData;
-const { heading, description, images, info } = content;
+const { heading, description, images, info: details } = content;
 </script>
