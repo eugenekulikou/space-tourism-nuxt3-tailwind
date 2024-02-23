@@ -26,8 +26,8 @@ export const data: IApiData = {
       content: {
         heading: '01 pick your destination',
         images: {
-          png: './assets/images/pages/destination/image-moon.png',
-          webp: './assets/images/pages/destination/image-moon.webp',
+          png: '/images/pages/destination/image-moon.png',
+          webp: '/images/pages/destination/image-moon.webp',
           alt: 'The image of the Moon',
         },
         description:
@@ -50,8 +50,8 @@ export const data: IApiData = {
       content: {
         heading: '01 pick your destination',
         images: {
-          png: './assets/images/pages/destination/image-mars.png',
-          webp: './assets/images/pages/destination/image-mars.webp',
+          png: '/images/pages/destination/image-mars.png',
+          webp: '/images/pages/destination/image-mars.webp',
           alt: 'The image of Mars',
         },
         description:
@@ -75,8 +75,8 @@ export const data: IApiData = {
       content: {
         heading: '01 pick your destination',
         images: {
-          png: './assets/images/pages/destination/image-europa.png',
-          webp: './assets/images/pages/destination/image-europa.webp',
+          png: '/images/pages/destination/image-europa.png',
+          webp: '/images/pages/destination/image-europa.webp',
           alt: 'The image of  Europa, the satelite of the Jupiter',
         },
         description:
@@ -99,8 +99,8 @@ export const data: IApiData = {
       content: {
         heading: '01 pick your destination',
         images: {
-          png: './assets/images/pages/destination/image-titan.png',
-          webp: './assets/images/pages/destination/image-titan.webp',
+          png: '/images/pages/destination/image-titan.png',
+          webp: '/images/pages/destination/image-titan.webp',
           alt: '',
         },
         description:
@@ -125,8 +125,8 @@ export const data: IApiData = {
       content: {
         heading: '02 Meet your crew',
         images: {
-          png: './assets/images/pages/crew/image-douglas-hurley.png',
-          webp: './assets/images/pages/crew/image-douglas-hurley.webp',
+          png: '/images/pages/crew/image-douglas-hurley.png',
+          webp: '/images/pages/crew/image-douglas-hurley.webp',
           alt: '',
         },
         role: 'Commander',
@@ -142,8 +142,8 @@ export const data: IApiData = {
       content: {
         heading: '02 Meet your crew',
         images: {
-          png: './assets/images/pages/crew/image-mark-shuttleworth.png',
-          webp: './assets/images/pages/crew/image-mark-shuttleworth.webp',
+          png: '/images/pages/crew/image-mark-shuttleworth.png',
+          webp: '/images/pages/crew/image-mark-shuttleworth.webp',
           alt: '',
         },
         role: 'Mission Specialist',
@@ -159,8 +159,8 @@ export const data: IApiData = {
       content: {
         heading: '02 Meet your crew',
         images: {
-          png: './assets/images/pages/crew/image-victor-glover.png',
-          webp: './assets/images/pages/crew/image-victor-glover.webp',
+          png: '/images/pages/crew/image-victor-glover.png',
+          webp: '/images/pages/crew/image-victor-glover.webp',
           alt: '',
         },
         role: 'Pilot',
@@ -176,8 +176,8 @@ export const data: IApiData = {
       content: {
         heading: '02 Meet your crew',
         images: {
-          png: './assets/images/pages/crew/image-anousheh-ansari.png',
-          webp: './assets/images/pages/crew/image-anousheh-ansari.webp',
+          png: '/images/pages/crew/image-anousheh-ansari.png',
+          webp: '/images/pages/crew/image-anousheh-ansari.webp',
           alt: '',
         },
         role: 'Flight Engineer',
@@ -197,9 +197,9 @@ export const data: IApiData = {
         heading: '03 Meet your crew',
         images: {
           portrait:
-            './assets/images/pages/technology/image-launch-vehicle-portrait.jpg',
+            '/images/pages/technology/image-launch-vehicle-portrait.jpg',
           landscape:
-            './assets/images/pages/technology/image-launch-vehicle-landscape.jpg',
+            '/images/pages/technology/image-launch-vehicle-landscape.jpg',
           alt: '',
         },
         description:
@@ -216,10 +216,8 @@ export const data: IApiData = {
         subheading: 'THE TERMINOLOGY…',
         heading: '03 Meet your crew',
         images: {
-          portrait:
-            './assets/images/pages/technology/image-spaceport-portrait.jpg',
-          landscape:
-            './assets/images/pages/technology/image-spaceport-landscape.jpg',
+          portrait: '/images/pages/technology/image-spaceport-portrait.jpg',
+          landscape: '/images/pages/technology/image-spaceport-landscape.jpg',
           alt: '',
         },
         description:
@@ -236,10 +234,9 @@ export const data: IApiData = {
         subheading: 'THE TERMINOLOGY…',
         heading: '03 Meet your crew',
         images: {
-          portrait:
-            './assets/images/pages/technology/image-space-capsule-portrait.jpg',
+          portrait: '/images/pages/technology/image-space-capsule-portrait.jpg',
           landscape:
-            './assets/images/pages/technology/image-space-capsule-landscape.jpg',
+            '/images/pages/technology/image-space-capsule-landscape.jpg',
           alt: '',
         },
         description:

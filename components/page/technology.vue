@@ -2,12 +2,12 @@
   <main
     id="main"
     class="bg-bottom-center bg-bottom-left grid h-full gap-6 space-y-8
-      bg-[url('@/assets/images/pages/technology/background-technology-mobile.jpg')]
-      bg-cover pb-16 pt-28 text-center grid-areas-technology-mobile
-      sm:bg-[url('@/assets/images/pages/technology/background-technology-tablet.jpg')]
+      bg-[url('/images/pages/technology/background-technology-mobile.jpg')] bg-cover
+      pb-16 pt-28 text-center grid-areas-technology-mobile
+      sm:bg-[url('/images/pages/technology/background-technology-tablet.jpg')]
       lg:grid-cols-[minmax(2rem,_1fr)_minmax(40rem,_1fr)_minmax(30,_1fr)]
       lg:justify-end lg:gap-x-32 lg:gap-y-8 lg:space-y-0
-      lg:bg-[url('@/assets/images/pages/technology/background-technology-desktop.jpg')]
+      lg:bg-[url('/images/pages/technology/background-technology-desktop.jpg')]
       lg:pt-48 lg:text-start lg:grid-areas-technology-desktop 2xl:justify-evenly"
   >
     <UiPageHeading
@@ -54,14 +54,11 @@
     <figure
       class="flex h-[10.625rem] [grid-area:figure] md:h-[19.375rem] lg:h-full lg:justify-end"
     >
-      <img
+      <NuxtImg
         class="hidden aspect-auto w-fit object-contain lg:block"
-        src="@/assets/images/pages/technology/image-launch-vehicle-portrait.jpg"
+        :src="images.portrait"
       />
-      <img
-        class="w-full lg:hidden"
-        src="@/assets/images/pages/technology/image-launch-vehicle-landscape.jpg"
-      />
+      <NuxtImg class="w-full lg:hidden" :src="images.landscape" />
     </figure>
   </main>
 </template>

@@ -2,11 +2,11 @@
   <main
     id="main"
     class="bg-bottom-center bg-bottom-left grid h-full gap-8
-      bg-[url('@/assets/images/pages/destination/background-destination-mobile.jpg')]
-      bg-cover pb-12 pt-28 text-center grid-areas-destinations-mobile
-      sm:bg-[url('@/assets/images/pages/destination/background-destination-tablet.jpg')]
+      bg-[url('/images/pages/destination/background-destination-mobile.jpg')] bg-cover
+      pb-12 pt-28 text-center grid-areas-destinations-mobile
+      sm:bg-[url('/images/pages/destination/background-destination-tablet.jpg')]
       lg:grid-cols-default lg:items-stretch lg:justify-start lg:gap-x-32 lg:gap-y-8
-      lg:bg-[url('@/assets/images/pages/destination/background-destination-desktop.jpg')]
+      lg:bg-[url('/images/pages/destination/background-destination-desktop.jpg')]
       lg:pt-48 lg:text-start lg:grid-areas-destinations-desktop"
   >
     <UiPageHeading
@@ -18,10 +18,7 @@
       class="flex max-w-[10.625rem] items-center place-self-center [grid-area:image]
         md:max-w-[18.75rem] lg:max-w-[27.8125rem]"
     >
-      <img
-        class="aspect-square"
-        src="@/assets/images/pages/destination/image-moon.png"
-      />
+      <NuxtImg class="aspect-square" :src="images.webp" :alt="images.alt" />
     </figure>
 
     <div

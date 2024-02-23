@@ -6,10 +6,14 @@ export default defineNuxtConfig({
     global: true,
     dirs: ['~/components'],
   },
-  modules: ['@nuxtjs/tailwindcss', '@vueuse/nuxt'],
+  modules: ['@nuxtjs/tailwindcss', '@vueuse/nuxt', '@nuxt/image'],
   typescript: {
     typeCheck: true,
   },
   devtools: false,
   routeRules,
+  image: {
+    format: ['webp'],
+    dir: 'public/',
+  },
 });

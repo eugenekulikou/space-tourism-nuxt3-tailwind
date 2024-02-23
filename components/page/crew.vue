@@ -2,13 +2,13 @@
   <main
     id="main"
     class="bg-bottom-center bg-bottom-left grid h-dvh gap-8 place-self-end
-      bg-[url('@/assets/images/pages/crew/background-crew-mobile.jpg')] bg-cover py-24
+      bg-[url('/images/pages/crew/background-crew-mobile.jpg')] bg-cover py-24
       text-center grid-areas-crew-mobile
-      sm:bg-[url('@/assets/images/pages/crew/background-crew-tablet.jpg')]
+      sm:bg-[url('/images/pages/crew/background-crew-tablet.jpg')]
       md:grid-areas-crew-tablet lg:grid-cols-default lg:items-stretch lg:justify-start
       lg:gap-x-32 lg:gap-y-8
-      lg:bg-[url('@/assets/images/pages/crew/background-crew-desktop.jpg')] lg:pb-0
-      lg:pt-48 lg:text-start lg:grid-areas-crew-desktop"
+      lg:bg-[url('/images/pages/crew/background-crew-desktop.jpg')] lg:pb-0 lg:pt-48
+      lg:text-start lg:grid-areas-crew-desktop"
   >
     <UiPageHeading
       class="mx-auto [grid-area:title] lg:mx-0 lg:self-center"
@@ -20,7 +20,7 @@
         border-white border-opacity-25 [grid-area:image] md:max-w-[28.5rem]
         lg:max-w-[35.5rem] lg:place-self-end"
     >
-      <img src="@/assets/images/pages/crew/image-douglas-hurley.png" />
+      <NuxtImg :src="images.webp" :alt="images.alt" />
     </figure>
 
     <article
