@@ -57,8 +57,11 @@
       <NuxtImg
         class="hidden aspect-auto w-fit object-contain lg:block"
         :src="images.portrait"
+        width="515"
+        height="527"
+        preload
       />
-      <NuxtImg class="w-full lg:hidden" :src="images.landscape" />
+      <NuxtImg class="w-full lg:hidden" :src="images.landscape" preload />
     </figure>
   </main>
 </template>

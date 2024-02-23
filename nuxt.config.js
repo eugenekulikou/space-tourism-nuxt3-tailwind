@@ -1,5 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import routeRules from './config';
+import { routeRules, image } from './config';
 
 export default defineNuxtConfig({
   components: {
@@ -12,8 +12,5 @@ export default defineNuxtConfig({
   },
   devtools: false,
   routeRules,
-  image: {
-    format: ['webp'],
-    dir: 'public/',
-  },
+  image,
 });

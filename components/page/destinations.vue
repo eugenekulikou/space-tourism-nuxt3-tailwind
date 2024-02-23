@@ -16,9 +16,15 @@
 
     <figure
       class="flex max-w-[10.625rem] items-center place-self-center [grid-area:image]
-        md:max-w-[18.75rem] lg:max-w-[27.8125rem]"
+        sm:max-w-[18.75rem] lg:max-w-[27.8125rem]"
     >
-      <NuxtImg class="aspect-square" :src="images.webp" :alt="images.alt" />
+      <NuxtImg
+        class="aspect-square"
+        :src="images.webp"
+        :alt="images.alt"
+        sizes="xs:170 sm:300px lg:445px"
+        preload
+      />
     </figure>
 
     <div
@@ -36,7 +42,7 @@
       </NuxtLink>
     </div>
 
-    <article class="mx-auto [grid-area:content] lg:mx-0">
+    <article class="mx-auto pb-12 [grid-area:content] lg:mx-0 lg:pb-0">
       <header>
         <h2 class="font-serif text-8xl uppercase leading-tight">
           {{ name }}
