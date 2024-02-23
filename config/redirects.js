@@ -8,5 +8,3 @@ export default {
     redirect: { to: '/technology/launch-vehicle', statusCode: 301 },
   },
 };
-
-// module.exports = routeRules;

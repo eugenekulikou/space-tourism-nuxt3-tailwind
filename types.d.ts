@@ -42,6 +42,7 @@ interface ICrewPageContent {
 
 interface ITechnologyPageContent {
   heading: string;
+  subheading: string;
   images: {
     portrait: string;
     landscape: string;

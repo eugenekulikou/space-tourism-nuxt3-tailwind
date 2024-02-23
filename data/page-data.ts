@@ -193,6 +193,7 @@ export const data: IApiData = {
       slug: 'launch-vehicle',
       name: 'Launch vehicle',
       content: {
+        subheading: 'THE TERMINOLOGY…',
         heading: '03 Meet your crew',
         images: {
           portrait:
@@ -212,6 +213,7 @@ export const data: IApiData = {
       slug: 'spaceport',
       name: 'Spaceport',
       content: {
+        subheading: 'THE TERMINOLOGY…',
         heading: '03 Meet your crew',
         images: {
           portrait:
@@ -231,6 +233,7 @@ export const data: IApiData = {
       slug: 'space-capsule',
       name: 'Space capsule',
       content: {
+        subheading: 'THE TERMINOLOGY…',
         heading: '03 Meet your crew',
         images: {
           portrait:

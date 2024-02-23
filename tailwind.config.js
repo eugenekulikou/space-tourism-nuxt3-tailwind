@@ -48,6 +48,13 @@ export default {
           '. content image .',
           '. dots-nav image .',
         ],
+        'technology-mobile': ['title', 'figure', 'content'],
+        'technology-tablet': ['title', 'figure', 'content'],
+        'technology-desktop': [
+          '. title title',
+          '. content figure',
+          '. content figure',
+        ],
       },
     },
   },
