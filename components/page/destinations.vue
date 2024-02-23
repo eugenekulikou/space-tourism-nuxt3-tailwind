@@ -9,15 +9,12 @@
       lg:bg-[url('@/assets/images/pages/destination/background-destination-desktop.jpg')]
       lg:pt-48 lg:text-start lg:grid-areas-destinations-desktop"
   >
-    <h1
-      class="mx-8 text-nowrap text-start font-sans-cond text-2xl uppercase tracking-widest
-        text-white [grid-area:title] lg:mx-0"
-    >
-      <span class="mr-4 font-semibold opacity-25">{{ prefix }}</span>
-      {{ heading }}
-    </h1>
+    <UiPageHeading
+      class="mx-auto [grid-area:title] lg:mx-0"
+      :heading="heading"
+    />
 
-    <div
+    <figure
       class="flex max-w-[10.625rem] items-center place-self-center [grid-area:image]
         md:max-w-[18.75rem] lg:max-w-[27.8125rem]"
     >
@@ -25,7 +22,7 @@
         class="aspect-square"
         src="@/assets/images/pages/destination/image-moon.png"
       />
-    </div>
+    </figure>
 
     <div
       class="underline-indicators flex h-10 justify-center space-x-8 [grid-area:tabs]
@@ -43,13 +40,15 @@
     </div>
 
     <article class="mx-auto [grid-area:content] lg:mx-0">
-      <h2 class="font-serif text-8xl uppercase leading-tight">
-        {{ name }}
-      </h2>
+      <header>
+        <h2 class="font-serif text-8xl uppercase leading-tight">
+          {{ name }}
+        </h2>
 
-      <p class="w-[50ch] text-center leading-8 lg:text-left">
-        {{ description }}
-      </p>
+        <p class="w-[50ch] text-center leading-8 lg:text-left">
+          {{ description }}
+        </p>
+      </header>
 
       <div
         class="mx-12 mt-8 flex flex-col justify-evenly space-y-12 border-t border-white
@@ -86,10 +85,6 @@ interface Props {
 }
 
 const props = defineProps<Props>();
-const { pageData } = props;
-const { content, name } = pageData;
-const { heading: pageHeading, description, images, info } = content;
-
-const { usePrefixedHeading } = usePageHeading();
-const [prefix, heading] = usePrefixedHeading(pageHeading);
+const { content, name } = props.pageData;
+const { heading, description, images, info } = content;
 </script>

@@ -10,13 +10,10 @@
       lg:bg-[url('@/assets/images/pages/crew/background-crew-desktop.jpg')] lg:pb-0
       lg:pt-48 lg:text-start lg:grid-areas-crew-desktop"
   >
-    <h1
-      class="mx-8 text-nowrap text-start font-sans-cond text-2xl uppercase tracking-widest
-        text-white [grid-area:title] lg:mx-0 lg:self-center"
-    >
-      <span class="text mr-4 font-semibold opacity-25">{{ prefix }}</span>
-      {{ heading }}
-    </h1>
+    <UiPageHeading
+      class="mx-auto [grid-area:title] lg:mx-0 lg:self-center"
+      :heading="heading"
+    />
 
     <figure
       class="flex aspect-auto max-w-[11.0625rem] place-self-center border-b border-solid
@@ -79,8 +76,5 @@ const props = defineProps<Props>();
 const { pageData } = props;
 
 const { name, content } = pageData;
-const { bio, images, role, heading: pageHeading } = content;
-
-const { usePrefixedHeading } = usePageHeading();
-const [prefix, heading] = usePrefixedHeading(pageHeading);
+const { bio, images, role, heading } = content;
 </script>
