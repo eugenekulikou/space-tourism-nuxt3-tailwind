@@ -25,7 +25,7 @@ export const data: IApiData = {
       name: 'Moon',
       content: {
         heading: '01 pick your destination',
-        images: {
+        image: {
           png: '/images/pages/destination/image-moon.png',
           webp: '/images/pages/destination/image-moon.webp',
           alt: 'The image of the Moon',
@@ -51,7 +51,7 @@ export const data: IApiData = {
       name: 'Mars',
       content: {
         heading: '01 pick your destination',
-        images: {
+        image: {
           png: '/images/pages/destination/image-mars.png',
           webp: '/images/pages/destination/image-mars.webp',
           alt: 'The image of Mars',
@@ -78,7 +78,7 @@ export const data: IApiData = {
       name: 'Europa',
       content: {
         heading: '01 pick your destination',
-        images: {
+        image: {
           png: '/images/pages/destination/image-europa.png',
           webp: '/images/pages/destination/image-europa.webp',
           alt: 'The image of  Europa, the satelite of the Jupiter',
@@ -104,7 +104,7 @@ export const data: IApiData = {
       name: 'titan',
       content: {
         heading: '01 pick your destination',
-        images: {
+        image: {
           png: '/images/pages/destination/image-titan.png',
           webp: '/images/pages/destination/image-titan.webp',
           alt: 'The photo of Titan, the moon of Saturn',
@@ -132,11 +132,13 @@ export const data: IApiData = {
       name: 'Douglas Hurley',
       content: {
         heading: '02 Meet your crew',
-        images: {
+        image: {
           png: '/images/pages/crew/image-douglas-hurley.png',
           webp: '/images/pages/crew/image-douglas-hurley.webp',
           alt: 'Photo of Douglas Hurley celebrating successful launch with his hands up',
           sizes: '177px sm:456px lg:568px',
+          width: 568,
+          height: 712,
         },
         role: 'Commander',
         bio: 'Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.',
@@ -152,11 +154,13 @@ export const data: IApiData = {
       name: 'Mark Shuttleworth',
       content: {
         heading: '02 Meet your crew',
-        images: {
+        image: {
           png: '/images/pages/crew/image-mark-shuttleworth.png',
           webp: '/images/pages/crew/image-mark-shuttleworth.webp',
           alt: 'Photo of Mark Shuttleworth giving a speech',
           sizes: '153px sm:368px lg:453px',
+          width: 453,
+          height: 654,
         },
         role: 'Mission Specialist',
         bio: 'Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.',
@@ -172,11 +176,13 @@ export const data: IApiData = {
       name: 'Victor Glover',
       content: {
         heading: '02 Meet your crew',
-        images: {
+        image: {
           png: '/images/pages/crew/image-victor-glover.png',
           webp: '/images/pages/crew/image-victor-glover.webp',
           alt: 'Photo of Victor Glover in NASA uniform',
           sizes: '180px sm:433px lg:554px',
+          width: 554,
+          height: 681,
         },
         role: 'Pilot',
         bio: 'Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer.',
@@ -192,11 +198,13 @@ export const data: IApiData = {
       name: 'Anousheh Ansari',
       content: {
         heading: '02 Meet your crew',
-        images: {
+        image: {
           png: '/images/pages/crew/image-anousheh-ansari.png',
           webp: '/images/pages/crew/image-anousheh-ansari.webp',
           alt: 'Photo of Anousheh Ansari giving a speech',
           sizes: '226px sm:539 lg:615',
+          width: 615,
+          height: 607,
         },
         role: 'Flight Engineer',
         bio: 'Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space.',
@@ -215,13 +223,15 @@ export const data: IApiData = {
       content: {
         subheading: 'THE TERMINOLOGY…',
         heading: '03 Meet your crew',
-        images: {
+        image: {
           portrait:
             '/images/pages/technology/image-launch-vehicle-portrait.jpg',
           landscape:
             '/images/pages/technology/image-launch-vehicle-landscape.jpg',
           alt: 'Launch Vehicle starts trip from cosmodrome',
           sizes: '374px sm:768px lg:515px',
+          width: 515,
+          height: 527,
         },
         description:
           "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!",
@@ -238,11 +248,13 @@ export const data: IApiData = {
       content: {
         subheading: 'THE TERMINOLOGY…',
         heading: '03 Meet your crew',
-        images: {
+        image: {
           portrait: '/images/pages/technology/image-spaceport-portrait.jpg',
           landscape: '/images/pages/technology/image-spaceport-landscape.jpg',
           alt: 'Space vehicle shown mounted to starting ramp on cosmodrome',
           sizes: '374px sm:768px lg:515px',
+          width: 515,
+          height: 527,
         },
         description:
           'A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.',
@@ -259,12 +271,14 @@ export const data: IApiData = {
       content: {
         subheading: 'THE TERMINOLOGY…',
         heading: '03 Meet your crew',
-        images: {
+        image: {
           portrait: '/images/pages/technology/image-space-capsule-portrait.jpg',
           landscape:
             '/images/pages/technology/image-space-capsule-landscape.jpg',
           alt: 'Space capsule cruising the destination orbit',
           sizes: '374px sm:768px lg:515px',
+          width: 515,
+          height: 527,
         },
         description:
           "A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.",

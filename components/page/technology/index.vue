@@ -42,12 +42,14 @@
     >
       <NuxtImg
         class="hidden aspect-auto w-fit object-contain lg:block"
-        :src="images.portrait"
-        :alt="images.alt"
-        :sizes="images.sizes"
+        :src="image.portrait"
+        :alt="image.alt"
+        :sizes="image.sizes"
+        :width="image.width"
+        :height="image.height"
         preload
       />
-      <NuxtImg class="w-full lg:hidden" :src="images.landscape" preload />
+      <NuxtImg class="w-full lg:hidden" :src="image.landscape" preload />
     </figure>
   </main>
 </template>
@@ -63,5 +65,5 @@ interface Props {
 const props = defineProps<Props>();
 
 const { content, name } = props.pageData;
-const { heading, description, images, subheading } = content;
+const { heading, description, image, subheading } = content;
 </script>

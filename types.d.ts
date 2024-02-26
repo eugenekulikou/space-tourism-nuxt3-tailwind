@@ -28,14 +28,14 @@ interface IHomePageContent {
 
 interface IDestinationsPageContent {
   heading: string;
-  images: IImageSrc;
+  image: IImageSrc;
   description: string;
   info: IDestinationInfo[];
 }
 
 interface ICrewPageContent {
   heading: string;
-  images: IImageSrc;
+  image: IImageSrc;
   role: string;
   bio: string;
 }
@@ -43,11 +43,9 @@ interface ICrewPageContent {
 interface ITechnologyPageContent {
   heading: string;
   subheading: string;
-  images: {
+  image: Omit<IImageSrc, 'webp' | 'png'> & {
     portrait: string;
     landscape: string;
-    alt: string;
-    sizes: string;
   };
   description: string;
 }
@@ -77,6 +75,8 @@ interface IImageSrc {
   png: string;
   alt: string;
   sizes?: string;
+  width?: number;
+  height?: number;
 }
 
 export type TNavigation = Record<string, ILink[] | SerializedObject<ILink[]>>;

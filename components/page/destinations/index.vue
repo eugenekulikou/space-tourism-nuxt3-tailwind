@@ -17,9 +17,11 @@
     >
       <NuxtImg
         class="aspect-square"
-        :src="images.webp"
-        :alt="images.alt"
+        :src="image.webp"
+        :alt="image.alt"
         sizes="xs:170px sm:300px lg:445px"
+        width="445"
+        height="445"
         preload
       />
     </figure>
@@ -73,5 +75,5 @@ interface Props {
 
 const props = defineProps<Props>();
 const { content, name } = props.pageData;
-const { heading, description, images, info: details } = content;
+const { heading, description, image, info: details } = content;
 </script>

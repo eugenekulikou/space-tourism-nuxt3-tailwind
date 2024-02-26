@@ -21,9 +21,9 @@
         lg:max-w-[35.5rem] lg:place-self-end"
     >
       <NuxtImg
-        :src="images.webp"
-        :alt="images.alt"
-        :sizes="images.sizes"
+        :src="image.webp"
+        :alt="image.alt"
+        :sizes="image.sizes"
         preload
       />
     </figure>
@@ -44,7 +44,7 @@
       </p>
     </article>
 
-    <PageCrewNav class="[grid-area:dots-nav]" :links="childrenLinks" />
+    <PageCrewNav class="[grid-area:nav]" :links="childrenLinks" />
   </main>
 </template>
 
@@ -66,5 +66,5 @@ const props = defineProps<Props>();
 const { pageData } = props;
 
 const { name, content } = pageData;
-const { bio, images, role, heading } = content;
+const { bio, image, role, heading } = content;
 </script>
