@@ -51,7 +51,13 @@
         :height="image.height"
         preload
       />
-      <NuxtImg class="w-full lg:hidden" :src="image.landscape" preload />
+      <NuxtImg
+        class="w-full lg:hidden"
+        :src="image.landscape"
+        :alt="image.alt"
+        :sizes="image.sizes"
+        preload
+      />
     </figure>
   </main>
 </template>

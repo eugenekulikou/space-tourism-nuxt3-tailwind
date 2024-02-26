@@ -5,11 +5,12 @@
     <NuxtLink
       v-for="(link, index) in links"
       :to="link.to"
-      :aria-selected="link.to === $route.fullPath"
+      :aria-current="link.to === $route.fullPath ? 'page' : false"
       class="grid h-20 w-20 place-content-center rounded-full border border-solid
         border-white bg-dark font-serif text-4xl text-white opacity-25
         transition-opacity duration-300 ease-in-out hover:opacity-50
-        aria-selected:bg-white aria-selected:text-dark aria-selected:opacity-100"
+        [&[aria-current=page]]:bg-white [&[aria-current=page]]:text-dark
+        [&[aria-current=page]]:opacity-100"
     >
       {{ index + 1 }}</NuxtLink
     >

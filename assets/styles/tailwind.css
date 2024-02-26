@@ -17,6 +17,6 @@
     ease-in-out 
     hover:border-opacity-50
     focus:border-opacity-50
-    aria-selected:border-opacity-50;
+    [&[aria-current=page]]:border-opacity-50;
   }
 }

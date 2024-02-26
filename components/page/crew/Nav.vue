@@ -5,9 +5,9 @@
       tag="a"
       :to="link.to"
       :alt="link.label"
+      :aria-current="link.to === $route.path ? 'page' : false"
       class="duration-400 h-4 w-4 rounded-full border-0 bg-white bg-opacity-25 transition-all
-        ease-in-out hover:bg-opacity-50 aria-selected:bg-opacity-100"
-      :aria-selected="link.to === $route.path"
+        ease-in-out hover:bg-opacity-50 [&[aria-current=page]]:bg-opacity-100"
     >
       <span class="sr-only">slide title</span>
     </NuxtLink>

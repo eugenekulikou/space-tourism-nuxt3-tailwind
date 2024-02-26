@@ -20,21 +20,21 @@
           :to="link.to"
           :index="'0' + index"
           :label="link.label"
-          :aria-selected="link.to === $route.path"
+          :aria-current="link.to.includes($route.params.section as string) ? 'page' : false"
         />
       </li>
     </ul>
   </nav>
 
   <nav role="navigation" class="hidden bg-white bg-opacity-15 backdrop-blur-xl md:block md:-mr-8 lg:-mr-12 lg:px-8">
-    <div class="underline-indicators has flex space-x-8 md:mx-10 lg:mx-20">
+    <div class="underline-indicators flex space-x-8 md:mx-10 lg:mx-20">
         <NavigationLink
           v-for="(link, index) in navLinks" 
           class="px-4 py-8 nav-menu-link"
           :to="link.to"
           :index="'0' + index"
           :label="link.label"
-          :aria-selected="link.to.includes($route.params.section as string)"
+          :aria-current="link.to.includes($route.params.section as string) ? 'page' : false"
         />
     </div>
   </nav>

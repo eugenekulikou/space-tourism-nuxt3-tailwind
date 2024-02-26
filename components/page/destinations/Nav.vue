@@ -5,7 +5,7 @@
     <NuxtLink
       v-for="link in links"
       class="pb-0 font-sans-cond uppercase tracking-wider text-white"
-      :aria-selected="link.to === $route.path"
+      :aria-current="link.to === $route.path ? 'page' : false"
       :to="link.to"
       tag="button"
     >
