@@ -46,7 +46,7 @@ interface ITechnologyPageContent {
   images: {
     portrait: string;
     landscape: string;
-    alt: '';
+    alt: string;
   };
   description: string;
 }

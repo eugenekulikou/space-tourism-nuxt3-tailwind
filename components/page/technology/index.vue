@@ -43,6 +43,7 @@
       <NuxtImg
         class="hidden aspect-auto w-fit object-contain lg:block"
         :src="images.portrait"
+        :alt="images.alt"
         width="515"
         height="527"
         preload
