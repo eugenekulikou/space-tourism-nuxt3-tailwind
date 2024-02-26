@@ -15,6 +15,9 @@ export default defineNuxtConfig({
   typescript: {
     typeCheck: true,
   },
+  seo: {
+    automaticDefaults: false,
+  },
   devtools: false,
   routeRules,
   image,
