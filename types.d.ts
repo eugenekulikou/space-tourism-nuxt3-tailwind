@@ -47,6 +47,7 @@ interface ITechnologyPageContent {
     portrait: string;
     landscape: string;
     alt: string;
+    sizes: string;
   };
   description: string;
 }
@@ -75,6 +76,7 @@ interface IImageSrc {
   webp: string;
   png: string;
   alt: string;
+  sizes?: string;
 }
 
 export type TNavigation = Record<string, ILink[] | SerializedObject<ILink[]>>;

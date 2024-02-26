@@ -20,7 +20,12 @@
         border-white border-opacity-25 [grid-area:image] md:max-w-[28.5rem]
         lg:max-w-[35.5rem] lg:place-self-end"
     >
-      <NuxtImg :src="images.webp" :alt="images.alt" preload />
+      <NuxtImg
+        :src="images.webp"
+        :alt="images.alt"
+        :sizes="images.sizes"
+        preload
+      />
     </figure>
 
     <article

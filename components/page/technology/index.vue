@@ -44,8 +44,7 @@
         class="hidden aspect-auto w-fit object-contain lg:block"
         :src="images.portrait"
         :alt="images.alt"
-        width="515"
-        height="527"
+        :sizes="images.sizes"
         preload
       />
       <NuxtImg class="w-full lg:hidden" :src="images.landscape" preload />

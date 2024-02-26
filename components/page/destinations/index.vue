@@ -19,7 +19,7 @@
         class="aspect-square"
         :src="images.webp"
         :alt="images.alt"
-        sizes="xs:170 sm:300px lg:445px"
+        sizes="xs:170px sm:300px lg:445px"
         preload
       />
     </figure>
