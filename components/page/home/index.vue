@@ -12,7 +12,7 @@
         lg:[&_>_:last-child]:col-start-3 lg:[&_>_:last-child]:col-end-3"
     >
       <div>
-        <h1 class="font-sans-cond text-2xl uppercase tracking-widest">
+        <h1 class="text-3xl font-sans-cond uppercase tracking-widest">
           {{ leadHeading }}<br />
           <span
             class="font-serif text-8xl uppercase leading-tight lg:text-9xl"

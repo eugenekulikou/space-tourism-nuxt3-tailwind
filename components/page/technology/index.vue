@@ -26,12 +26,14 @@
           <p class="font-sans-cond text-base uppercase tracking-wider">
             {{ subheading }}
           </p>
-          <h2 class="text-nowrap font-serif text-6xl uppercase leading-tight">
+          <h2
+            class="text-nowrap font-serif text-2xl uppercase leading-tight sm:text-6xl"
+          >
             {{ name }}
           </h2>
         </header>
 
-        <p class="max-w-[50ch] text-center leading-8 lg:text-left">
+        <p class="px-8 text-center leading-8 sm:w-[50ch] sm:px-0 lg:text-left">
           {{ description }}
         </p>
       </article>

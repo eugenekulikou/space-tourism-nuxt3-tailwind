@@ -1,13 +1,13 @@
 <template>
   <main
     id="main"
-    class="bg-bottom-center bg-bottom-left grid h-dvh gap-8 place-self-end
+    class="bg-bottom-center bg-bottom-left grid h-dvh w-full gap-8 place-self-end
       bg-[url('/images/pages/crew/background-crew-mobile.jpg')] bg-cover py-24
       text-center grid-areas-crew-mobile
       sm:bg-[url('/images/pages/crew/background-crew-tablet.jpg')]
       sm:grid-areas-crew-tablet lg:grid-cols-default lg:items-stretch lg:justify-start
       lg:gap-x-32 lg:gap-y-8
-      lg:bg-[url('/images/pages/crew/background-crew-desktop.jpg')] lg:pb-0 lg:pt-48
+      lg:bg-[url('/images/pages/crew/background-crew-desktop.jpg')] lg:pb-0 lg:pt-36
       lg:text-start lg:grid-areas-crew-desktop"
   >
     <PageHeading
@@ -32,14 +32,18 @@
       class="mx-auto space-y-4 self-end text-center [grid-area:content] lg:mx-0
         lg:self-center lg:text-start"
     >
-      <header class="pt-12">
-        <h2 class="font-serif text-4xl uppercase opacity-50">{{ role }}</h2>
-        <p class="text-nowrap font-serif text-6xl uppercase">
+      <header>
+        <h2 class="font-serif text-base uppercase opacity-50 sm:text-4xl">
+          {{ role }}
+        </h2>
+        <p class="text-nowrap font-serif text-2xl uppercase sm:text-6xl">
           {{ name }}
         </p>
       </header>
 
-      <p class="mx-auto w-[45ch] text-xl leading-8 lg:mx-0 lg:text-left">
+      <p
+        class="mx-auto px-8 text-xl leading-8 sm:w-[45ch] md:px-0 lg:mx-0 lg:text-left"
+      >
         {{ bio }}
       </p>
     </article>

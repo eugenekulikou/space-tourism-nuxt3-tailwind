@@ -3,13 +3,13 @@
     <h1 class="text-4xl uppercase">Design system</h1>
 
     <section id="colors" class="mx-0 my-16">
-      <h2 class="font-sans-cond text-2xl uppercase tracking-widest">
+      <h2 class="text-3xl font-sans-cond uppercase tracking-widest">
         <span class="mr-2 font-semibold opacity-25">01</span> colors
       </h2>
       <div class="flex space-x-2">
         <div class="flex-grow">
           <div
-            class="border border-solid border-white bg-dark px-4 pb-4 pt-12 font-serif text-2xl
+            class="text-3xl border border-solid border-white bg-dark px-4 pb-4 pt-12 font-serif
               font-medium text-white"
           >
             #0B0D17
@@ -19,7 +19,7 @@
         </div>
         <div class="flex-grow">
           <div
-            class="border border-solid border-white bg-light px-4 pb-4 pt-12 font-serif text-2xl
+            class="text-3xl border border-solid border-white bg-light px-4 pb-4 pt-12 font-serif
               font-medium text-dark"
           >
             #D0D6F9
@@ -29,7 +29,7 @@
         </div>
         <div class="flex-grow">
           <div
-            class="border border-solid border-white bg-dark px-4 pb-4 pt-12 font-serif text-2xl
+            class="text-3xl border border-solid border-white bg-dark px-4 pb-4 pt-12 font-serif
               font-medium text-white"
           >
             #FFFFFF
@@ -45,18 +45,18 @@
         class="flex flex-col space-y-4 xl:flex-row xl:space-x-4 xl:space-y-0"
       >
         <p
-          class="text-nowrap font-sans-cond text-2xl uppercase tracking-widest text-white"
+          class="text-3xl text-nowrap font-sans-cond uppercase tracking-widest text-white"
         >
           <span class="mr-6 font-semibold opacity-25">01</span>pick your
           destination
         </p>
         <p
-          class="text-nowrap font-sans-cond text-2xl uppercase tracking-widest text-white"
+          class="text-3xl text-nowrap font-sans-cond uppercase tracking-widest text-white"
         >
           <span class="mr-6 font-semibold opacity-25">02</span>meet your crew
         </p>
         <p
-          class="text-nowrap font-sans-cond text-2xl uppercase tracking-widest text-white"
+          class="text-3xl text-nowrap font-sans-cond uppercase tracking-widest text-white"
         >
           <span class="mr-6 font-semibold opacity-25">03</span>space launch 101
         </p>
@@ -64,7 +64,7 @@
     </section>
 
     <section id="typography" class="mx-0 my-16">
-      <h2 class="mb-12 font-sans-cond text-2xl uppercase tracking-widest">
+      <h2 class="text-3xl mb-12 font-sans-cond uppercase tracking-widest">
         <span class="mr-2 font-semibold opacity-25">02 </span>Typography
       </h2>
       <div class="flex">
@@ -99,7 +99,7 @@
             <p class="font-sans-normal text-xl">
               Heading 5 - Barlow Condensed Regular - 28px - 4.75 Character Space
             </p>
-            <p class="font-sans-cond text-2xl uppercase tracking-widest">
+            <p class="text-3xl font-sans-cond uppercase tracking-widest">
               So, you want to travel to space
             </p>
           </div>
@@ -110,7 +110,7 @@
             <p class="font-sans-normal text-xl">
               Subheading 1 - Bellefair Regular - 28px
             </p>
-            <p class="font-serif text-2xl uppercase">384,400 km</p>
+            <p class="text-3xl font-serif uppercase">384,400 km</p>
           </div>
           <div>
             <p class="font-sans-normal text-xl">
@@ -153,7 +153,7 @@
     </section>
 
     <section id="interactive-elements" class="mx-0 my-16">
-      <h2 class="font-sans-cond text-2xl uppercase tracking-widest">
+      <h2 class="text-3xl font-sans-cond uppercase tracking-widest">
         <span class="mr-2 font-semibold opacity-25">03 </span>Interactive
         Elements
       </h2>

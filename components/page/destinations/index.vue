@@ -30,11 +30,11 @@
 
     <article class="mx-auto pb-12 [grid-area:content] lg:mx-0 lg:pb-0">
       <header>
-        <h2 class="font-serif text-8xl uppercase leading-tight">
+        <h2 class="font-serif text-6xl uppercase leading-tight">
           {{ name }}
         </h2>
 
-        <p class="w-[50ch] text-center leading-8 lg:text-left">
+        <p class="px-8 text-center leading-8 sm:w-[50ch] sm:px-0 lg:text-left">
           {{ description }}
         </p>
       </header>
@@ -52,7 +52,7 @@
           <h3 class="font-sans-cond text-sm uppercase tracking-wide">
             {{ title }}
           </h3>
-          <p class="font-serif text-2xl uppercase">{{ info }}</p>
+          <p class="text-3xl font-serif uppercase">{{ info }}</p>
         </div>
       </div>
     </article>
