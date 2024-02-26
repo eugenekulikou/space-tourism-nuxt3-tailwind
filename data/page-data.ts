@@ -40,9 +40,11 @@ export const data: IApiData = {
           },
         ],
       },
-      title: '',
-      keywords: '',
-      description: '',
+      title: 'Explore the Moon: Unforgettable Space Tourism Experience',
+      keywords:
+        'Moon, space tourism, lunar travel, Luna 2, Apollo 11, space exploration',
+      description:
+        'Embark on an unforgettable space tourism journey to the Moon. Witness Earth from a new perspective and explore the historic landing sites of Luna 2 and Apollo 11. Experience relaxation and gain fresh insights on this three-day voyage, covering an average distance of 384,400 km.',
     },
     {
       slug: 'mars',
@@ -65,9 +67,11 @@ export const data: IApiData = {
           },
         ],
       },
-      title: '',
-      keywords: '',
-      description: '',
+      title: 'Journey to Mars: Epic Space Tourism Adventure',
+      keywords:
+        'Mars, space tourism, Martian landscape, Olympus Mons, space exploration',
+      description:
+        'Prepare for an epic space tourism adventure to Mars. Explore the rugged Martian landscape and conquer Olympus Mons, the tallest mountain in the solar system. With a travel time of nine months and an average distance of 225 million km, this journey promises unparalleled experiences.',
     },
     {
       slug: 'europa',
@@ -89,9 +93,11 @@ export const data: IApiData = {
           },
         ],
       },
-      title: '',
-      keywords: '',
-      description: '',
+      title: "Europa: Discover the Frozen Beauty of Jupiter's Moon",
+      keywords:
+        'Europa, space tourism, icy moon, Galilean moons, Jupiter, space exploration',
+      description:
+        "Delve into the frozen beauty of Europa, Jupiter's mesmerizing moon. Experience the thrill of ice skating and winter sports on its icy surface, located 628 million km away. Plan your three-year space tourism adventure to Europa and immerse yourself in its enchanting atmosphere.",
     },
     {
       slug: 'titan',
@@ -113,9 +119,11 @@ export const data: IApiData = {
           },
         ],
       },
-      title: '',
-      keywords: '',
-      description: '',
+      title: "Titan: Explore Saturn's Moon and Its Mysteries",
+      keywords:
+        "Titan, space tourism, Saturn's moon, atmosphere, Rings of Saturn, space exploration",
+      description:
+        "Discover the mysteries of Titan, Saturn's intriguing moon with a dense atmosphere. Experience its otherworldly landscapes and behold striking views of the Rings of Saturn. Begin your seven-year space tourism journey to Titan, located approximately 1.6 billion km away.",
     },
   ],
   crew: [
@@ -132,9 +140,11 @@ export const data: IApiData = {
         role: 'Commander',
         bio: 'Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.',
       },
-      title: '',
-      keywords: '',
-      description: '',
+      title: 'Meet Douglas Hurley: Your Experienced Commander',
+      keywords:
+        'Douglas Hurley, space crew, NASA astronaut, Crew Dragon Demo-2, space exploration',
+      description:
+        'Meet Douglas Hurley, an American engineer and former NASA astronaut who served as the commander of Crew Dragon Demo-2. With his extensive experience and background as a Marine Corps pilot, he brings invaluable expertise to your space journey.',
     },
     {
       slug: 'mark-shuttleworth',
@@ -149,9 +159,11 @@ export const data: IApiData = {
         role: 'Mission Specialist',
         bio: 'Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.',
       },
-      title: '',
-      keywords: '',
-      description: '',
+      title: 'Introducing Mark Shuttleworth: Mission Specialist Extraordinaire',
+      keywords:
+        'Mark Shuttleworth, space crew, space tourist, Ubuntu, Canonical',
+      description:
+        "Get to know Mark Shuttleworth, the visionary founder of Canonical and the first South African space tourist. As a mission specialist, Mark's pioneering spirit and technological acumen ensure an extraordinary experience for space tourists aboard your journey.",
     },
     {
       slug: 'victor-glover',
@@ -166,9 +178,11 @@ export const data: IApiData = {
         role: 'Pilot',
         bio: 'Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer.',
       },
-      title: '',
-      keywords: '',
-      description: '',
+      title: 'Meet Victor Glover: Skilled Pilot and Space Explorer',
+      keywords:
+        'Victor Glover, space crew, NASA astronaut, SpaceX Crew Dragon, space exploration',
+      description:
+        'Meet Victor Glover, an accomplished pilot in the U.S. Navy and NASA astronaut. As the pilot of the SpaceX Crew Dragon, Victor brings a wealth of experience and expertise to your space adventure, ensuring a safe and thrilling journey to the International Space Station.',
     },
     {
       slug: 'anousheh-ansari',
@@ -183,9 +197,11 @@ export const data: IApiData = {
         role: 'Flight Engineer',
         bio: 'Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space.',
       },
-      title: '',
-      keywords: '',
-      description: '',
+      title: 'Anousheh Ansari: Your Dedicated Flight Engineer',
+      keywords:
+        'Anousheh Ansari, space crew, space tourist, Prodea Systems, Iranian American engineer',
+      description:
+        "Discover Anousheh Ansari, an Iranian American engineer and the fourth self-funded space tourist. As a flight engineer, Anousheh's passion for exploration and innovation enriches your space tourism experience, making it truly unforgettable.",
     },
   ],
   technology: [
@@ -205,9 +221,11 @@ export const data: IApiData = {
         description:
           "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!",
       },
-      title: '',
-      keywords: '',
-      description: '',
+      title: 'Explore Our Powerful Launch Vehicle: WEB-X Carrier Rocket',
+      keywords:
+        'Launch vehicle, carrier rocket, WEB-X, space travel, space exploration',
+      description:
+        " Discover the WEB-X carrier rocket, our most powerful launch vehicle designed to propel payloads from Earth's surface to space. Standing at an impressive 150 meters tall, it's a remarkable feat of engineering and an awe-inspiring sight on the launch pad.",
     },
     {
       slug: 'spaceport',
@@ -223,9 +241,11 @@ export const data: IApiData = {
         description:
           'A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.',
       },
-      title: '',
-      keywords: '',
-      description: '',
+      title: 'Welcome to Our Spaceport: Launch Site for Extraordinary Journeys',
+      keywords:
+        'Spaceport, cosmodrome, Cape Canaveral, launch site, space exploration',
+      description:
+        "Explore our spaceport, strategically located at Cape Canaveral, the renowned launch site synonymous with space exploration. Take advantage of Earth's rotation for optimal launches and embark on extraordinary journeys to space from our state-of-the-art facility.",
     },
     {
       slug: 'space-capsule',
@@ -242,9 +262,12 @@ export const data: IApiData = {
         description:
           "A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.",
       },
-      title: '',
-      keywords: '',
-      description: '',
+
+      title: 'Welcome to Our Spaceport: Launch Site for Extraordinary Journeys',
+      keywords:
+        'Space capsule, spacecraft, reentry capsule, space gym, space cinema',
+      description:
+        ' Immerse yourself in our space capsule, your home away from Earth during the journey. Equipped with amenities like a space gym, cinema, and various entertainment options, our capsule ensures both comfort and adventure as you traverse the cosmos.',
     },
   ],
 };
