@@ -3,6 +3,13 @@ import { routeRules, image, head, site } from './config';
 import isDev from 'std-env';
 
 export default defineNuxtConfig({
+  app: {
+    head: {
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+    },
+    pageTransition: { name: 'page', mode: 'out-in' },
+  },
   components: {
     global: true,
     dirs: ['~/components'],
@@ -19,10 +26,8 @@ export default defineNuxtConfig({
   seo: {
     automaticDefaults: false,
   },
-  ignore: [!isDev ? '' : 'design-system/'],
   devtools: false,
   routeRules,
   image,
-  head,
   site,
 });
