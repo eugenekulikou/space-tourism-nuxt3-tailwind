@@ -1,89 +1,109 @@
-# Frontend Mentor - Space tourism website
+# Frontend Mentor - Space tourism website solution
 
-![Design preview for the Space tourism website coding challenge](./preview.jpg)
+This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Welcome! 👋
+## Table of contents
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects. Our challenges are perfect portfolio pieces, so please feel free to use what you create in your portfolio to show others.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Motivation](#motivation)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+  - [Useful tools](#useful-tools)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-**To do this challenge, you need a strong understanding of HTML, CSS, and JavaScript.**
+## Overview
 
-## The challenge
+### The challenge
 
-Your challenge is to build out this multi-page space tourism website and get it looking as close to the design as possible.
-
-**This project is a collaboration between us, Scrimba, and Kevin Powell. If you'd like to see how Kevin would tackle the project, you can [follow along on Scrimba's free course](https://scrimba.com/learn/spacetravel).**
-
-If you're working through it yourself, please use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-If you choose to use a JS-heavy approach, we provide a local `data.json` file for the different page data. This means you'll be able to pull the data from there instead of using the separate `.html` files.
-
-Your users should be able to:
+Users should be able to:
 
 - View the optimal layout for each of the website's pages depending on their device's screen size
 - See hover states for all interactive elements on the page
 - View each page and be able to toggle between the tabs to see new information
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+### Screenshot
 
-## Where to find everything
+![Home Page Screenshot](./screenshots/space-tourism-nuxt-tailwind.vercel.app_home.png)
 
-Your task is to build out the project to the design file provided. We provide both Sketch and Figma versions of the design, so you can choose which tool you prefer to use. You can download the design file on the platform. The design download comes with a `README.md` file as well to help you get set up.
+### Links
 
-All the required assets for this project are in the `/assets` folder. The assets are already exported for the correct screen size and optimized. Some images are reusable at multiple screen sizes.
+- Solution URL: [Github](https://github.com/evk11/space-tourism-nuxt3-tailwind)
+- Live Site URL: [https://space-tourism-nuxt-tailwind.vercel.app/](https://space-tourism-nuxt-tailwind.vercel.app/)
 
-The design system in the design file will give you more information about the various colors, fonts, and styles used in this project.
+## My process
 
-## Building your project
+### Motivation
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+My motivation is twofold: firstly, to explore the capabilities of Nuxt3 for static site generation and secondly, to enhance my overall web development skills. I am driven to achieve mastery in pixel-perfect design and to implement Tailwind's DRY (Don't Repeat Yourself) best practices, thereby creating a design system with easily readable and maintainable classes.
 
-1. Separate the `starter-code` from the rest of this project and rename it to something meaningful for you. Initialize the codebase as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+In this project, I'm diving into Nuxt3 to construct a content-based multi-page website, which can be generated as a static site.
 
-## Deploying your project
+My objective is to attain a Light House score exceeding 99, coupled with impeccable Core Web Vitals statistics. The application will seamlessly connect to a CRM API or utilize plain markdown, facilitating edits by non-engineer staff. Leveraging robust @nuxt3 modules, including those for SEO, i18n, Nuxt Images, and social share previews, is central to my approach. Furthermore, I will integrate transitions and animations, providing rationale for each design choice.
 
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
+Furthermore, I am committed to exploring the boundaries of deployment options beyond Vercel, seeking alternative hosts to broaden my understanding of deployment strategies of Nuxt3.
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+### Built with
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+- Semantic HTML5 markup
+- CSS Grid Templates
+- Mobile-first workflow
+- [Nuxt3](https://nuxt.com/) - Vue Framework
+- [Nuxt/Image](https://image.nuxt.com/) - Optimized Images for Nuxt Apps
+- [Nuxt/Seo](https://www.nuxtseo.com/) - SEO work for Nuxt
+- [TailwindCSS](https://tailwindcss.com/) - A utility-first CSS framework
+- Typescript
+- ESlint & Prettier
 
-## Create a custom `README.md`
+<!-- ### What I learned
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+To see how you can add code snippets, see below:
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+```html
+<h1>Some HTML code I'm proud of</h1>
+```
 
-## Submitting your solution
+```css
+.proud-of-this-css {
+  color: papayawhip;
+}
+```
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+```js
+const proudOfThisFunc = () => {
+  console.log('🎉');
+};
+``` -->
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+### Continued development
 
-## Sharing your solution
+In future, I aim to achieve a 99 accessibility score and implement robust internationalization support while continuously refining techniques and staying updated on best practices in both areas to create inclusive and user-friendly experiences for a diverse global audience.
 
-There are multiple places you can share your solution:
+### Useful resources
 
-1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community).
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+- [Grid Template](https://css-tricks.com/almanac/properties/g/grid-template/) - CSS grid templates simplify the creation of complex grid layouts by allowing the concise definition of grid columns, rows, and areas in a single declaration.
+- [Cached Fetch Composable](https://masteringnuxt.com/blog/writing-a-cache-composable-in-nuxt-3) - Caching is a great way to save hosting service bill.
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback.
+### Useful tools
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+- [perfectpixel](https://www.welldonecode.com/perfectpixel/) - A great tool to developing website with per-pixel accuracy.
+- [unlighthouse](https://unlighthouse.dev/) - Unlighthouse is a tool to scan your entire site with Google Lighthouse in 2 minutes (on average). Open source, fully configurable with minimal setup.
 
-## Got feedback for us?
+## Author
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+- Frontend Mentor - [@evk11](https://www.frontendmentor.io/profile/evk11)
+- LinkedIn - [@eugenekulikou](https://www.linkedin.com/in/eugenekulikou/)
 
-**Have fun building!** 🚀
+<!-- ## Acknowledgments
+
+This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+
+**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.** -->
