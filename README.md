@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://github.com/evk11/space-tourism-nuxt3-tailwind)
+- Solution URL: [Github](https://github.com/eugenekulikou/space-tourism-nuxt3-tailwind)
 - Live Site URL: [https://space-tourism-nuxt-tailwind.vercel.app/](https://space-tourism-nuxt-tailwind.vercel.app/)
 
 ## My process
@@ -99,7 +99,7 @@ In future, I aim to achieve a 99 accessibility score and implement robust intern
 
 ## Author
 
-- Frontend Mentor - [@evk11](https://www.frontendmentor.io/profile/evk11)
+- Frontend Mentor - [@eugenekulikou](https://www.frontendmentor.io/profile/eugenekulikou)
 - LinkedIn - [@eugenekulikou](https://www.linkedin.com/in/eugenekulikou/)
 
 <!-- ## Acknowledgments
